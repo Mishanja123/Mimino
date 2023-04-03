@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIMINO</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LEAFLET MAP Library-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/project-1/assets/index-0b83c738.css">
+    <link rel="stylesheet" href="/project-1/assets/footer-c2021696.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <header class="header">
+  <div class="header-wrapper header-wrapper-home container">
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        class="header-menu-open-icon header-menu-open-icon-light"
+        width="28"
+        height="28"
+      >
+        <use href="/project-1/assets/icons-f89c3f39.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <nav class="navigation">
+      <ul class="header-list header-list-light list">
+        <li class="header-list-item">
+          <a
+            href="../index.html"
+            class="header-list-link header-list-link-light link current"
+            >Home</a
+          >
+        </li>
+        <li class="header-list-item">
+          <a
+            href="../page-2-hotel.html"
+            class="header-list-link header-list-link-light link"
+            >Hotel</a
+          >
+        </li>
+        <li class="header-list-item">
+          <a
+            href="../page-3-restaurant.html"
+            class="header-list-link header-list-link-light link"
+            >Restaurant</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="header-logo header-logo-light">
+      <a href="" class="logo-big link">Mimino</a>
+      <a href="" class="logo-small link">restaurant-hotel complex</a>
+    </div>
+
+    <ul class="header-social-list">
+      <li class="header-social-item">
+        <a href="https://www.instagram.com/" class="header-social-list-link">
+          <svg class="header-social-icon" width="20" height="20">
+            <use href="/project-1/assets/icons-f89c3f39.svg#icon-instagram-menu"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a href="https://www.facebook.com/" class="header-social-list-link">
+          <svg class="header-social-icon" width="20" height="20">
+            <use href="/project-1/assets/icons-f89c3f39.svg#icon-facebook-menu"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a href="https://twitter.com/" class="header-social-list-link">
+          <svg class="header-social-icon" width="20" height="20">
+            <use href="/project-1/assets/icons-f89c3f39.svg#icon-twitter-menu"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu-header">
+    <button class="js-close-menu btn-close">
+      <svg class="close-icon" width="14" height="14">
+        <use href="/project-1/assets/icons-f89c3f39.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="header-logo menu-logo">
+      <a href="" class="logo-big link">Mimino</a>
+      <a href="" class="logo-small link">restaurant-hotel complex</a>
+    </div>
+  </div>
+  <ul class="menu-list list">
+    <li class="menu-list-item">
+      <a href="./index.html" class="header-list-link link">Home</a>
+    </li>
+    <li class="menu-list-item">
+      <a href="./hotel.html" class="header-list-link link">Hotel</a>
+    </li>
+    <li class="menu-list-item">
+      <a href="./restaurant.html" class="header-list-link link">Restaurant</a>
+    </li>
+  </ul>
+
+  <ul class="menu-social-list">
+    <li class="menu-social-item">
+      <a href="https://www.instagram.com/" class="header-social-list-link">
+        <svg class="header-social-icon" width="20" height="20">
+          <use href="/project-1/assets/icons-f89c3f39.svg#icon-instagram-menu"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="header-social-item">
+      <a href="https://www.facebook.com/" class="header-social-list-link">
+        <svg class="header-social-icon" width="20" height="20">
+          <use href="/project-1/assets/icons-f89c3f39.svg#icon-facebook-menu"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="header-social-item">
+      <a href="https://twitter.com/" class="header-social-list-link">
+        <svg class="header-social-icon" width="20" height="20">
+          <use href="/project-1/assets/icons-f89c3f39.svg#icon-twitter-menu"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="./js/mobile-menu.js"></script>
+
+    </header>
+    <!-- main -->
+
+    <main>
+      <section>
+        <section class="hero-section section">
+  <div class="main-page-hero-wrap container">
+    <h1 class="hero-section-title">MIMINO</h1>
+    <ul class="hero-btn-list">
+      <li class="hero-btn-list-ithem">
+        <button class="main-page-btn btn" type="button" data-modal-room-open>
+          book a room
+        </button>
+      </li>
+      <li class="hero-btn-list-ithem">
+        <button class="main-page-btn btn" type="button" data-modal-table-open>
+          book a table
+        </button>
+      </li>
+    </ul>
+
+    <!-- data-modal-open -->
+    <ul class="hero-desc-list">
+      <li class="hero-desc-list-ithem hero-desc-1">
+        <p>
+          Whether you're in the mood for a hearty breakfast, a light lunch, or a
+          <span class="italic">romantic dinner</span>, our menu has something
+          for everyone.
+        </p>
+      </li>
+      <li class="hero-desc-list-ithem hero-desc-2">
+        <p>
+          At Hotel Mimino, <span class="italic">we believe</span> that great
+          food should be available to everyone, no matter the time of day.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+        <section class="about-section section">
+  <div class="about-section-wrap container">
+    <h2 class="about-section-title visually-hidden" hidden>about</h2>
+    <ul class="about-section-list">
+      <li class="about-list-ithem">
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/room-tab-desc@1x-e98571be.webp 1x, /project-1/assets/room-tab-desc@2x-0313b26a.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/room-tab-desc@1x-4a24b97c.jpg 1x, /project-1/assets/room-tab-desc@2x-b452d203.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/project-1/assets/room-mobile@1x-e6bb0d59.webp 1x, /project-1/assets/room-mobile@2x-bf964220.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/project-1/assets/room-mobile@1x-a9132b8d.jpg 1x, /project-1/assets/room-mobile@2x-5a03fecd.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="about-room-img"
+            src="/project-1/assets/room-mobile@1x-a9132b8d.jpg"
+            alt="Room with a chimney"
+            width="335"
+            height="442"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/bathroom-tab-desc@1x-51906d2e.webp 1x, /project-1/assets/bathroom-tab-desc@2x-41aa2969.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/bathroom-tab-desc@1x-9f0d5865.jpg 1x, /project-1/assets/bathroom-tab-desc@2x-1e53db66.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/project-1/assets/bathroom-mobile@1x-7e4a00e3.webp 1x, /project-1/assets/bathroom-mobile@2x-a99ef6ef.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/project-1/assets/bathroom-mobile@1x-c9f21688.jpg 1x, /project-1/assets/bathroom-mobile@2x-db9024d1.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="about-bathroom-img"
+            src="/project-1/assets/bathroom-mobile@1x-c9f21688.jpg"
+            alt="bathroom"
+            width="282"
+            height="153"
+          />
+        </picture>
+        <div class="rating-wrap maria">
+          <img
+            class="about-section-img-maria"
+            src="/project-1/assets/maria-mobile-44796430.png"
+            alt="Maria"
+            width="41"
+            height="41"
+          />
+          <div class="rating-text-wrap">
+            <p class="about-section-rating-name">Maria</p>
+            <p class="about-section-raiting-span">
+              give rating <span class="about-section-raiting-digit">4.5</span>
+            </p>
+          </div>
+        </div>
+        <div class="about-section-rest-hotel-wrap">
+          <h3 class="about-ithem-title">restaurant-hotel complex</h3>
+          <p class="about-rest-hotel-desc1">
+            Indulge in a taste of luxury with every bite at Hotel Mimino. From
+            the freshest seafood to the most succulent steaks, every dish is
+            crafted with care to ensure that you enjoy a truly memorable dining
+            experience.
+          </p>
+          <p class="about-rest-hotel-desc2">
+            Treat yourself to a taste of the good life and come dine with us
+            today!
+          </p>
+        </div>
+      </li>
+      <li class="about-list-ithem">
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/tables-tab-desc@1x-ef0afa70.webp 1x, /project-1/assets/tables-tab-desc@2x-50223de4.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/tables-tab-desc@1x-52c7949f.jpg 1x, /project-1/assets/tables-tab-desc@2x-c50a6b52.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/project-1/assets/tables-mobile@1x-2c040137.webp 1x, /project-1/assets/tables-mobile@2x-a3cea2ca.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="/project-1/assets/tables-mobile@1x-f3aa60de.jpg 1x, /project-1/assets/tables-mobile@2x-24f5d2df.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="about-tables-img"
+            src="/project-1/assets/tables-mobile@1x-f3aa60de.jpg"
+            alt="Tables with glasses"
+            width="335"
+            height="311"
+          />
+        </picture>
+        <div class="about-business-hotel-wrap">
+          <div class="about-business-hotel-desc">
+            <h3 class="about-ithem-title">business class hotel</h3>
+            <p class="about-business-class-desc">
+              The Mimino hotel features spacious and stylish double luxury rooms
+              with modern amenities for a comfortable stay.
+            </p>
+          </div>
+          <picture>
+            <source
+              media="(min-width:768px)"
+              srcset="/project-1/assets/hall-tab-desc@1x-b48822bb.webp 1x, /project-1/assets/hall-tab-desc@2x-734e67da.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="/project-1/assets/hall-tab-desc@1x-c35ef18c.jpg 1x, /project-1/assets/hall-tab-desc@2x-fc51f7b0.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="/project-1/assets/hall-mobile@1x-b34ea042.webp 1x, /project-1/assets/hall-mobile@2x-b0238d42.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="/project-1/assets/hall-mobile@1x-6f96dc37.jpg 1x, /project-1/assets/hall-mobile@2x-9497cd80.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              class="about-hall-img"
+              src="/project-1/assets/hall-mobile@1x-6f96dc37.jpg"
+              alt="hall"
+              width="335"
+              height="309"
+            />
+          </picture>
+        </div>
+        <div class="rating-wrap alexander">
+          <img
+            class="about-section-img-alexander"
+            src="data:image/png;base64,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"
+            alt="Alexander"
+            width="41"
+            height="41"
+          />
+          <div class="rating-text-wrap">
+            <p class="about-section-rating-name">Alexander</p>
+            <p class="about-section-raiting-span">
+              give rating <span class="about-section-raiting-digit">5.5</span>
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+        <section class="container restaurant-details">
+  <div class="desk-descr">
+    <div class="rest-descr">
+      <h2 class="title-restaurant">RESTAURANT</h2>
+      <p class="rest-description">
+        RELAX AND UNWIND WITH OUR</br> DELICIOUS OFFERINGS, AVAILABLE </br>
+         ANY TIME OF DAY.
+      </p>
+    </div>
+    <div class="restaurant-btn mb-hidden">
+      <button class="btn btn-dark" type="button" data-modal-table-open>Book a table</button>
+      <button class="btn btn-dark" type="button">View the menu</button>
+    </div>
+  </div>
+  <ul class="img-list list mb-img-hidden">
+    <li>
+      <img
+                srcset="/project-1/assets/rest-details1-mb-1x-2c9249cf.jpg 1x, /project-1/assets/rest-details1-mb-2x-56a8aa42.jpg 2x"
+                src="./images/index/img_1.jpg"
+                alt="Glass with ice"
+                width="157"
+                height="201"
+                class="image"
+              />
+    </li>
+    <li>
+      <img
+                srcset="/project-1/assets/rest-details2-mb-1x-8e6155ce.jpg 1x, /project-1/assets/rest-details2-mb-2x-e7674ce2.jpg 2x"
+                src="/project-1/assets/rest-details2-mb-1x-8e6155ce.jpg"
+                alt="Cook"
+                width="157"
+                height="201"
+                class="image"
+              />
+    </li>
+  </ul>
+  <ul class="img-list list tbl-img-hidden">
+    <li>
+      <img
+                srcset="/project-1/assets/rest-details-1-tbl-1x-537ecc2b.jpg 1x, /project-1/assets/rest-details-1-tbl-2x-2c58f7c7.jpg 2x"
+                src="/project-1/assets/rest-details-1-tbl-1x-537ecc2b.jpg"
+                alt="Glass with ice"
+                width="336"
+                height="309"
+                class="image"
+              />
+    </li>
+    <li>
+      <img
+                srcset="/project-1/assets/rest-details-2-tbl-1x-9c297e45.jpg 1x, /project-1/assets/rest-details-2-tbl-2x-ad15e76b.jpg 2x"
+                src="/project-1/assets/rest-details-2-tbl-1x-9c297e45.jpg"
+                alt="Cook"
+                width="336"
+                height="309"
+                class="image"
+              />
+    </li>
+  </ul>
+  <ul class="img-list list dsk-img-hidden">
+    <li class="img-item">
+      <img
+      class="img-height"
+                srcset="/project-1/assets/rest-details_1-desk-1x-ae6cd546.jpg 1x, /project-1/assets/rest-details_1-desk-2x-bfaddbb1.jpg 2x"
+                src="/project-1/assets/rest-details_1-desk-1x-ae6cd546.jpg"
+                alt="Glass with ice"
+                width="266"
+                height="309"
+                class="image"
+              />
+    </li>
+    <li class="img-item">
+      <img
+      class="img-height"
+      srcset="/project-1/assets/rest-details_2-desk-1x-e4300d7b.jpg 1x, /project-1/assets/rest-details_2-desk-2x-f54cd381.jpg 2x"
+      src="/project-1/assets/rest-details_2-desk-1x-e4300d7b.jpg"
+      alt="Sandwich"
+      width="266"
+      height="309"
+      class="image"
+    />
+    </li>
+    <li class="img-item">
+      <img 
+      class="img-height"
+      srcset="/project-1/assets/rest-details_3-desk-1x-97f3369b.jpg 1x, /project-1/assets/rest-details_3-desk-2x-ab4d09b8.jpg 2x"
+      src="/project-1/assets/rest-details_3-desk-1x-97f3369b.jpg"
+      alt="Bottle of wine"
+      width="266"
+      height="309"
+      class="image"
+    />
+    </li>
+    <li class="img-item">
+      <img
+      class="img-height"
+      srcset="/project-1/assets/rest-details_4-desk-1x-2ad85181.jpg 1x, /project-1/assets/rest-details_4-desk-2x-f53eb9c5.jpg 2x"
+      src="/project-1/assets/rest-details_4-desk-1x-2ad85181.jpg"
+      alt="Cook"
+      width="266"
+      height="309"
+      class="image"
+    />
+    </li>
+    <li class="img-item">
+      <img
+      class="img-height"
+      srcset="/project-1/assets/rest-details_5-desk-1x-137742ed.jpg 1x, /project-1/assets/rest-details_5-desk-2x-50e59f9f.jpg 2x"
+      src="/project-1/assets/rest-details_5-desk-1x-137742ed.jpg"
+      alt="Fried fish"
+      width="266"
+      height="309"
+      class="image"
+    />
+    </li>
+  </ul>
+
+  <div class="restaurant-btn dsk-hidden">
+    <button class="btn btn-dark" type="button" data-modal-table-open>Book a table</button>
+    <button class="btn btn-dark" type="button">View the menu</button>
+  </div>
+   
+</section>
+
+
+        <section class="welcome container">
+  <div class="welcome-text">
+    <h2 class="heading-welcome">
+      Welcome to the epitome of
+      <span class="heading-welcome-italic">luxury</span> and
+      <span class="heading-welcome-italic">comfort</span>
+    </h2>
+    <div class="welcome-paragrahp">
+      <p class="paragraph-welcome-1">
+        Our hotel rooms are elegantly designed with an eye for detail, ensuring
+        that you have everything you need for a relaxing and rejuvenating stay.
+      </p>
+      <p class="paragraph-welcome-2">
+        Each room is equipped with the latest amenities, including plush
+        bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker to help
+        you start your day right. Our spacious bathrooms feature luxurious
+        toiletries and towels, so you can pamper yourself in complete privacy.
+      </p>
+    </div>
+  </div>
+  <picture>
+    <source
+      media="(min-width:1200px)"
+      srcset="/project-1/assets/luxury_desk@1x-68fdf226.webp 1x, /project-1/assets/luxury_desk@2x-7ad183ff.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width:1200px)"
+      srcset="/project-1/assets/luxury_desk@1x-b6fc880f.jpg 1x, /project-1/assets/luxury_desk@2x-a2b47543.jpg 2x"
+      type="image/jpg"
+    />
+    <source
+      media="(min-width:768px)"
+      srcset="/project-1/assets/luxury_tab@1x-e814df1c.webp 1x, /project-1/assets/luxury_tab@2x-68eaf42d.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width:768px)"
+      srcset="/project-1/assets/luxury_tab@1x-0346a0fa.jpg 1x, /project-1/assets/luxury_tab@2x-dcc6d0b0.jpg 2x"
+      type="image/jpg"
+    />
+    <source
+      media="(min-width:320px)"
+      srcset="/project-1/assets/luxury_mob@1x-5ca81b50.webp 1x, /project-1/assets/luxury_mob@2x-f18d620c.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width:320px)"
+      srcset="/project-1/assets/luxury_mob@1x-20d16323.jpg 1x, /project-1/assets/luxury_mob@2x-fb0029a2.jpg 2x"
+      type="image/jpg"
+    />
+
+    <img
+      src="/project-1/assets/luxury_desk@1x-b6fc880f.jpg"
+      alt="Luxury"
+      width="335"
+      height="432"
+      class="welcome-img"
+    />
+  </picture>
+</section>
+
+
+        <section class="container hotel-details">
+  <div class="container-hotels-details">
+    <div class="hd-title-text">
+      <h2 class="hd-title">Hotel</h2>
+      <p class="hd-light-text">
+        Book your stay with us now and experience the epitome of comfort and
+        luxury at our hotel. We guarantee you'll be thrilled with your decision.
+      </p>
+    </div>
+    <ul class="list dh-cards">
+      <!--==================== ПЕРШІ ДВІ КАРТКИ-ПЛАНШЕТ -->
+      <li class="dh-imgs-tbl-first-list">
+        <ul class="dh-two-cards">
+          <li>
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-1/assets/towel_desk@1x-45b832be.jpg 1x, /project-1/assets/towel_desk@2x-1f1b45fa.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-1/assets/towel_tab@1x-7d229be9.jpg 1x, /project-1/assets/towel_tab@2x-64c601c3.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="/project-1/assets/towel_mob@1x-32628a03.jpg 1x, /project-1/assets/towel_mob@2x-9acca333.jpg 2x"
+                type="image/jpg"
+              />
+
+              <img
+                src="/project-1/assets/towel_mob@1x-32628a03.jpg"
+                alt="Towel"
+                class="dh-card-towel"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-1/assets/bath_desk@1x-bed4467b.jpg 1x, /project-1/assets/bath_desk@2x-e73b29e3.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-1/assets/bath_tab@1x-782fccd4.jpg 1x, /project-1/assets/bath_tab@2x-5037064c.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="/project-1/assets/bath_mob@1x-cf191811.jpg 1x, /project-1/assets/bath_mob@1x-cf191811.jpg 2x"
+                type="image/jpg"
+              />
+
+              <img
+                src="/project-1/assets/bath_mob@1x-cf191811.jpg"
+                alt="Bath"
+                class="dh-card-bath"
+              />
+            </picture>
+          </li>
+        </ul>
+      </li>
+      <!--========================= ГОЛОВНЕ ЗОБРАЖЕННЯ-ЛІЖКО -->
+      <li class="dh-main-img">
+        <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="/project-1/assets/bed_desk@1x-d5084f23.jpg 1x, /project-1/assets/bed_desk@2x-ee07a4d3.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/bed_tab@1x-a63fd9cf.jpg 1x, /project-1/assets/bed_tab@2x-ecb1ca21.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/project-1/assets/bed_mob@1x-add4439b.jpg 1x, /project-1/assets/bed_mob@2x-6c661e0e.jpg 2x"
+            type="image/jpg"
+          />
+
+          <img
+            src="/project-1/assets/bed_mob@1x-add4439b.jpg"
+            alt="Bed"
+            class="dh-card-bed"
+          />
+        </picture>
+      </li>
+      <!--======================== ДВА ЗОБРАЖЕННЯ НА СМАРТФОН -->
+      <li class="dh-imgs-mbl">
+        <ul class="dh-two-img-mbl">
+          <li>
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-1/assets/towel_desk@1x-45b832be.jpg 1x, /project-1/assets/towel_desk@2x-1f1b45fa.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-1/assets/towel_tab@1x-7d229be9.jpg 1x, /project-1/assets/towel_tab@2x-64c601c3.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="/project-1/assets/towel_mob@1x-32628a03.jpg 1x, /project-1/assets/towel_mob@2x-9acca333.jpg 2x"
+                type="image/jpg"
+              />
+
+              <img
+                src="/project-1/assets/towel_mob@1x-32628a03.jpg"
+                alt="Towel"
+                class="dh-card-towel"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-1/assets/bath_desk@1x-bed4467b.jpg 1x, /project-1/assets/bath_desk@2x-e73b29e3.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-1/assets/bath_tab@1x-782fccd4.jpg 1x, /project-1/assets/bath_tab@2x-5037064c.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="/project-1/assets/bath_mob@1x-cf191811.jpg 1x, /project-1/assets/bath_mob@1x-cf191811.jpg 2x"
+                type="image/jpg"
+              />
+
+              <img
+                src="/project-1/assets/bath_mob@1x-cf191811.jpg"
+                alt="Bath"
+                class="dh-card-bath"
+              />
+            </picture>
+          </li>
+        </ul>
+      </li>
+      <!--=============== ДВА ЗОБРАЖЕННЯ ПІСЛЯ ЛІЖКА-ПЛАНШЕТ -->
+      <li class="dh-imgs-tbl-last-list">
+        <ul class="dh-two-cards">
+          <li>
+            <picture class="dh-sink-tab">
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-1/assets/sink_desk@1x-2f06b5ce.jpg 1x, /project-1/assets/sink_desk@2x-22633fab.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-1/assets/sink_tab@1x-c78447af.jpg 1x, /project-1/assets/sink_tab@2x-e97a900c.jpg 2x"
+                type="image/jpg"
+              />
+
+              <img src="/project-1/assets/sink_tab@1x-c78447af.jpg" alt="Bath" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcset="/project-1/assets/cream_desk@1x-0b5bd479.jpg 1x, /project-1/assets/cream_desk@2x-f7fb133f.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/project-1/assets/cream_tab@1x-657a9576.jpg 1x, /project-1/assets/cream_tab@2x-d3d9a161.jpg 2x"
+                type="image/jpg"
+              />
+
+              <img
+                src="/project-1/assets/cream_tab@1x-657a9576.jpg"
+                alt="Bath"
+                class="dh-cream-desk"
+              />
+            </picture>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="hd-arrs">
+      <li>
+        <svg class="hd-arr-right" width="24px" height="24px">
+          <use href="/project-1/assets/icons-f89c3f39.svg#icon-arr-left"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="hd-arr-left" width="24px" height="24px">
+          <use href="/project-1/assets/icons-f89c3f39.svg#icon-arr-right"></use>
+        </svg>
+      </li>
+    </ul>
+
+    <ul class="hd-btns">
+      <li class="">
+        <button class="btn btn-light hd-btn" type="button" data-modal-room-open>
+          BOOK A ROOM
+        </button>
+      </li>
+      <li class="">
+        <button class="btn btn-light hd-btn" type="button">VIEW ROOM</button>
+      </li>
+    </ul>
+  </div>
+</section>
+<!--===================== /MP-HOTELS-DETAILS =====================-->
+
+
+        <!-- Main Page Location and Contacts HTML -->
+<section class="location">
+  <div class="location-block container">
+    <h2 class="location-title">LOCATION</h2>
+
+    <div class="map-images">
+      <!-- <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/images-location/map-desktop@1x.jpg 1x,
+              ./img/images-location/map-desktop@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+  
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/images-location/map-tablet-1@1x.jpg 1x,
+              ./img/images-location/map-tablet-2@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+  
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/images-location/map-mobile@1x.jpg 1x,
+              ./img/images-location/map-mobile@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+  
+          <a
+            href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D0%BD%D0%B8%D0%B9+%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81+%22%D0%9C%D1%96%D0%BC%D1%96%D0%BD%D0%BE%22/@49.599194,34.5265463,17z/data=!4m15!1m8!3m7!1s0x40d82601f3347a5f:0x36f3f9aeec44a6a!2z0LLRg9C70LjRhtGPINCc0LDRgNGI0LDQu9CwINCR0ZbRgNGO0LfQvtCy0LAsIDE1LCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCAzNjAwMA!3b1!8m2!3d49.599194!4d34.5265463!16s%2Fg%2F1tggm4y1!3m5!1s0x40d82601f34ac947:0xbb948724f7cf0b61!8m2!3d49.5992605!4d34.5259946!16s%2Fg%2F1td63v2t"
+          >
+            <img
+              class="map-photo"
+              src="./img/images-location/map-mobile@1x.jpg"
+              alt="map"
+              width="335px"
+            />
+          </a>
+        </picture> -->
+      <div id="map"></div>
+    </div>
+
+    <div class="location-description">
+      <div class="contacts-list">
+        <a
+          ><h3 class="item-adress">
+            Ukraine, Poltava,<br />
+            St. Marshal Biryuzov, 15
+          </h3></a
+        >
+
+        <div class="contacts-block">
+          <p class="contacts-subtitle">call us:</p>
+          <ul class="item-phone">
+            <li>
+              <a href="tel: +38(095) 555 95 33">(095) 555 95 33</a>
+            </li>
+            <li>
+              <a href="tel: +38(066) 849 10 89">(066) 849 10 89</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script
+  src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""
+></script>
+<script src="./js/map.js"></script>
+
+<!-- end section -->
+
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="page-footer container">
+  <div class="footer-wrapper">
+    <ul class="footer-desk-list list">
+      <li class="footer-desk-list-item">
+        <a href="./index.html" class="footer-desk-list-link link">HOME</a>
+      </li>
+      <li class="footer-desk-list-item">
+        <a href="./hotel.html" class="footer-desk-list-link link">HOTEL</a>
+      </li>
+      <li class="footer-desk-list-item">
+        <a href="./restaurant.html" class="header-desk-list-link link"
+          >RESTAURANT</a
+        >
+      </li>
+    </ul>
+
+    <div class="footer-logo">
+      <a href="" class="logo-big light link">Mimino</a>
+      <a href="" class="logo-small light link">restaurant-hotel complex</a>
+    </div>
+
+    <ul class="footer-desk-social-list list">
+      <li class="footer-desk-social-list-item">
+        <a href="" class="footer-social-list-link link">
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/project-1/assets/icons-cfd7fa20.svg#icon-header-footer-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-desk-social-list-item">
+        <a href="" class="footer-social-list-link link">
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/project-1/assets/icons-cfd7fa20.svg#icon-header-footer-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-desk-social-list-item">
+        <a href="" class="footer-social-list-link link">
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/project-1/assets/icons-cfd7fa20.svg#icon-header-footer-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    </footer>
+
+    <!-- SCRIPT -->
+    <!-- <script src="./js/map.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-book-room.js"></script>
+    <script src="./js/modal-book-table.js"></script>
+    <script src="./js/modal-price.js"></script>
+    <script type="module" src="/main.js"></script> -->
+  </body>
+</html>
