@@ -1,32 +1,47 @@
 <!--Modal PRICES PER ROOM-->
 <div class="backdrop is-hidden" data-modal-price>
   <div class="modal">
-    <button class="modal-btn" type="button" data-modal-price-close>
+    <button class="modal-close-btn" type="button" data-modal-price-close>
       <svg class="customers-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-header-menu-close"></use>
       </svg>
     </button>
-    <strong class="title-of-modal">PRICES PER ROOM</strong>
-    <form action="" class="form">
+    <strong class="title-of-modal"
+      >PRICES PER <snip class="title-of-modal-italic">ROOM</snip></strong
+    >
+
+    <form action="" class="form-prices labels-grid">
       <label class="modal-label">
-        <span>DOUBLE SUITE</span>
         <input
+          id="nightsNumber"
+          name="number-people"
+          class="modal-input modal-input-number-people"
           type="number"
-          class="modal-input"
-          name="weight"
-          min="1"
-          max="150"
-          step="1"
           required
         />
+        <span class="modal-label-room">Double suite</span>
         <span class="modal-under-input">NUMBER OF NIGHTS</span>
       </label>
       <label class="modal-label">
-        <span class="span-hidden">fd</span>
-        <input type="date" class="modal-input" required />
+        <span id="result" class="price-result"></span>
+        <select class="modal-input modal-input-result"></select>
         <span class="modal-under-input">UAH</span>
       </label>
+      <button
+        type="button"
+        onClick="multiplyBy()"
+        value="Multiply"
+        class="modal-btn modal-btn-prices btn btn-light"
+      >
+        Check price
+      </button>
     </form>
-    <button type="submit" class="modal-button">MAKE A RESERVATION</button>
   </div>
 </div>
+
+<script>
+  function multiplyBy() {
+    num1 = document.getElementById('nightsNumber').value;
+    document.getElementById('result').innerHTML = num1 * 1000;
+  }
+</script>

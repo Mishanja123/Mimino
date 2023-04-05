@@ -28,14 +28,12 @@
   display: flex;
   flex-direction: column;
   width: 335px;
-  justify-content: center;
 
   background-color: #121212;
   padding-top: 32px;
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 40px;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,17 +51,32 @@
   letter-spacing: -0.02em;
   color: #f7f7f7;
   margin-bottom: 40px;
+
+}
+
+@media screen and (min-width: 768px) {
+  .title-of-modal {
+    font-size: 36px;
+    line-height: calc(40 / 36px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .title-of-modal {
+
+  }
 }
 
 .title-of-modal-italic{
   font-style: italic;
 }
 
-.span-hidden {
-  opacity: 0;
+.form-prices{
+  margin-top: 60px;
 }
 
 .modal-label {
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(18 / 14);
@@ -83,13 +96,36 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus + .modal-label-name {
+.modal-input:not(:placeholder-shown)+.modal-label-name,
+.modal-input:focus + .modal-label-name
+ {
   transform: translateY(-22px);
+}
+
+.modal-input::placeholder {
+  opacity: 0;
 }
 
 .modal-label-phone{
   position: absolute;
   top: 9px;
+}
+
+.modal-label-number{
+  position: absolute;
+  top: 9px;
+}
+
+.modal-label-room{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+  letter-spacing: -0.02em;
+  color: #f7f7f7;
+  position: absolute;
+  top: -32px;
+
 }
 
 .modal-under-input {
@@ -136,6 +172,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: 37px;
 }
 
+.modal-input-number{
+  padding-left: 210px;
+  margin-bottom: 20px;
+}
+
+.modal-input-result{
+  -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+
+.modal-input-number-people::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .modal-btn {
   padding: 14px 48px;
   width: 235px;
@@ -143,6 +196,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: calc(18 / 14);
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,6 +214,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 14px 133px;
     width: 444px;
   }
+}
+
+.modal-btn-prices{
+  margin-top: 60px;
 }
 
 .modal-close-btn {
@@ -198,4 +257,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: 12px;
   z-index: -1;
 
+}
+
+
+.price-result{
+  position: absolute;
+  top: 9px
 }
