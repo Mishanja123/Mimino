@@ -1,38 +1,58 @@
 <!--Modal BOOK A ROOM-->
 <div class="backdrop is-hidden" data-modal-room>
   <div class="modal modal-room">
-    <button class="modal-btn" type="button" data-modal-room-close>
+    <button class="modal-close-btn" type="button" data-modal-room-close>
       <svg class="customers-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-header-menu-close"></use>
       </svg>
     </button>
-    <strong class="title-of-modal">BOOK A ROOM</strong>
+    <strong class="title-of-modal">BOOK A <snip class="title-of-modal-italic">ROOM</snip></strong>
     <form action="" class="form-room">
-      <div class="label1">
-        <label class="modal-label modal-label-room">
-          YOUR NAME
-          <input type="text" class="modal-input" />
-          <span class="modal-under-input">WHO SHOULD BOOK A TABLE FOR?</span>
-        </label>
+      <div class="labels-grid">
+
         <label class="modal-label">
-          <span></span>
-          <input type="tel" class="modal-input" />
+          <input type="text" class="modal-input" />
+          <span class="modal-label-name">YOUR NAME</span>
+          <span class="modal-under-input">Who should book a room for?</span>
+        </label>
+
+        <label class="modal-label">
+          <input type="tel" class="modal-input modal-input-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/>
+          <span class="modal-label-phone">+380</span>
           <span class="modal-under-input">PHONE NUMBER</span>
         </label>
-      </div>
-      <div class="label2">
-        <label class="modal-label modal-label-room">
-          <span>NUMBER OF PEOPLE</span>
-          <input type="" class="modal-input" />
-          <span class="modal-under-input">fROM "1" TO "10"</span>
-        </label>
-        <label class="modal-label modal-label-room">
+
+        <label class="modal-label">
           <span></span>
-          <input type="" class="modal-input" />
-          <span class="modal-under-input">WHAT DATE TO BOOK?</span>
+       <input type="date" class="modal-input">
+          <span class="modal-under-input">Check-in date</span>
+          <svg class="arrow-down" width="9" height="9">
+        <use href="./img/icons.svg#icon-arr-down"></use>
+      </svg>
         </label>
-      </div>
+
+        <label class="modal-label">
+          <input type="date" class="modal-input">
+            <span class="modal-under-input">Check-out date</span>
+          <svg class="arrow-down" width="9" height="9">
+        <use href="./img/icons.svg#icon-arr-down"></use>
+      </svg>
+
+        </label>
+
+          <label class="modal-label">
+              <span></span>
+              <!-- <input type="" class="modal-input" /> -->
+              <select name="number-category" class="modal-input">
+                <option value="double">DOUBLE LUXURY ROOM</option>
+                <option value="triple">Triple Room</option>
+                <option value="four-seater" selected>four-seater room</option>
+              </select>
+              <span class="modal-under-input">Number category</span>
+
+            </label>
+            <button type="submit" class="modal-btn btn btn-light">MAKE A RESERVATION</button>
     </form>
-    <button type="submit" class="modal-button">MAKE A RESERVATION</button>
   </div>
 </div>
+
