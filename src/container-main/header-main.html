@@ -1,5 +1,5 @@
-<header class="header container">
-  <div class="header-wrapper">
+<header class="header hidek">
+  <div class="header-wrapper container">
     <button
       class="menu-toggle js-open-menu"
       aria-expanded="false"
@@ -148,4 +148,28 @@
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
 ></script>
-<script defer src="./js/mobile-menu.js"></script>
+<script>
+  let lastScroll = 0;
+  const defaultOffset = 100;
+  const header = document.querySelector('.header');
+
+  const scrollPosition = () =>
+    window.pageYOffset || document.documentElement.scrollTop;
+  const containHide = () => header.classList.contains('hidek');
+  window.addEventListener('scroll', () => {
+    if (
+      scrollPosition() > lastScroll &&
+      !containHide() &&
+      scrollPosition() > defaultOffset
+    ) {
+      header.classList.add('hidek');
+      //scroll down
+    } else if (scrollPosition() < lastScroll && containHide()) {
+      header.classList.remove('hidek');
+      //scroll up
+    }
+
+    lastScroll = scrollPosition();
+  });
+</script>
+<script type="module" src="../js/mobile-menu.js"></script>
