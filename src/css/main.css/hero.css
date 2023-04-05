@@ -118,8 +118,8 @@
         margin-bottom: 196px;
 
         font-size: 180px;
-        text-align: left;
-    }
+        text-align: left;   
+    }   
 }
 
 .hero-btn-list {
@@ -232,3 +232,6 @@
 .italic {
     font-style: italic;
 }
+
+
+
