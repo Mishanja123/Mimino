@@ -21,4 +21,4 @@ if (navigator.geolocation)
     function () {
       alert('Could not get the location');
     }
-  );js
+  );

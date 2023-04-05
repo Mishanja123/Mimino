@@ -1,28 +1,44 @@
+/* mobile */
 .welcome {
-    /* mobile */
-    padding-top: 64px;
-    padding-bottom: 80px;
-
+    padding-bottom: 64px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 /* tablet */
 @media screen and (min-width: 768px) {
     .welcome {
-        padding-top: 80px;
         padding-bottom: 80px;
     }
 }
-
 /* desktop */
 @media screen and (min-width: 1440px) {
     .welcome {
-        position: relative;
-        padding-top: 126px;
         padding-bottom: 100px;
     }
 }
 
 
+/* mobile */
+.welcome-box{
+
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    .welcome-box {
+    }
+}
+/* desktop */
+@media screen and (min-width: 1440px) {
+.welcome-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 32px; 
+}
+}
+
+
+/* mobile */
 .heading-welcome {
     font-family: 'DM Sans';
     text-transform: uppercase;
@@ -33,16 +49,15 @@
     color: #000000;
     margin-bottom: 32px;
 }
-
 /* tablet */
 @media screen and (min-width: 768px) {
     .heading-welcome {
         font-size: 36px;
         line-height: 1.111111;
         width: 434px;
+        margin-bottom: 50px;
     }
 }
-
 /* desktop */
 @media screen and (min-width: 1440px) {
     .heading-welcome {}
@@ -52,6 +67,8 @@
     font-style: italic;
 }
 
+
+/* mobile */
 .welcome-paragrahp {
     display: flex;
     flex-direction: column;
@@ -63,16 +80,16 @@
     line-height: 1.2857142857;
     letter-spacing: -0.02em;
     color: #000000;
+    margin-bottom: 32px;
 }
-
 /* tablet */
 @media screen and (min-width: 768px) {
     .welcome-paragrahp {
         flex-direction: row;
         letter-spacing: 1.3021428571;
+        
     }
 }
-
 /* desktop */
 @media screen and (min-width: 1440px) {
     .welcome-paragrahp {
@@ -82,6 +99,8 @@
     }
 }
 
+
+/* mobile */
 .paragraph-welcome-1 {
     width: 306px;
 }
@@ -90,7 +109,6 @@
 @media screen and (min-width: 768px) {
     .paragraph-welcome-1 {}
 }
-
 /* desktop */
 @media screen and (min-width: 1440px) {
     .paragraph-welcome-1 {
@@ -101,10 +119,10 @@
 /* tablet */
 @media screen and (min-width: 768px) {
     .paragraph-welcome-2 {
+       
         width: 366px;
     }
 }
-
 /* desktop */
 @media screen and (min-width: 1440px) {
     .paragraph-welcome-2 {
@@ -112,32 +130,33 @@
     }
 }
 
+
+/* mobile */
 .welcome-img {
     margin-top: 32px;
 }
-
 /* tablet */
 @media screen and (min-width: 768px) {
     .welcome-img {
-        margin-top: 29px;
+        margin-top: 0;
         width: 704px;
         height: 599px;
     }
 }
-
 /* desktop */
 @media screen and (min-width: 1440px) {
     .welcome-img {
         margin-top: 0;
+        margin-right: 0;
         width: 672px;
         height: 599px;
     }
 }
 
+
+
 /* desktop */
 @media screen and (min-width: 1440px) {
     .welcome-text {
-        position: absolute;
-        left: 736px;
     }
 }
