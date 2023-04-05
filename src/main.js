@@ -1,5 +1,5 @@
-// import './js/modal-table.js';
-// import './js/modal-room.js';
-// import './js/modal-price.js';
-// import './js/mobile-menu.js';
-// import './js/map.js';
+import './js/modal-price.js';
+import './js/modal-book-table.js';
+import './js/modal-book-room.js';
+import './js/mobile-menu.js';
+import './js/map.js';

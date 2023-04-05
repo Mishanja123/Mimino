@@ -1,5 +1,5 @@
-<header class="header">
-  <div class="header-wrapper header-wrapper-home container">
+<header class="header container">
+  <div class="header-wrapper">
     <button
       class="menu-toggle js-open-menu"
       aria-expanded="false"
@@ -14,37 +14,76 @@
       </svg>
     </button>
     <nav class="navigation">
-      <ul class="header-list header-list-light list">
-        <li class="header-list-item">
+      <ul class="nav-list nav-list-light list">
+        <li class="nav-item">
           <a
             href="/project-1/index.html"
-            class="header-list-link header-list-link-light link current"
+            class="nav-link nav-link-light link current"
             >Home</a
           >
         </li>
-        <li class="header-list-item">
+        <li class="nav-item">
           <a
             href="/project-1/page-2-hotel.html"
-            class="header-list-link header-list-link-light link"
+            class="nav-link nav-link-light link"
             >Hotel</a
           >
         </li>
-        <li class="header-list-item">
+        <li class="nav-item">
           <a
             href="/project-1/page-3-restaurant.html"
-            class="header-list-link header-list-link-light link"
+            class="nav-link nav-link-light link"
             >Restaurant</a
           >
         </li>
       </ul>
     </nav>
-    <div class="header-logo header-logo-light">
+    <div class="header-try">
+      <div class="logo-box logo-box-light">
+        <a href="" class="logo-big link">Mimino</a>
+        <a href="" class="logo-small link">restaurant-hotel complex</a>
+      </div>
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a href="https://www.instagram.com/" class="header-social-link">
+            <svg class="header-social-icon" width="20" height="20">
+              <use href="./img/svg-images/icons.svg#icon-instagram-menu"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="https://www.facebook.com/" class="header-social-link">
+            <svg class="header-social-icon" width="20" height="20">
+              <use href="./img/svg-images/icons.svg#icon-facebook-menu"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="https://twitter.com/" class="header-social-link">
+            <svg class="header-social-icon" width="20" height="20">
+              <use href="./img/svg-images/icons.svg#icon-twitter-menu"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="js-close-menu btn-close">
+    <svg class="close-icon" width="14" height="14">
+      <use href="./img/svg-images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="header-menu-box">
+    <div class="header-logo menu-logo">
       <a href="" class="logo-big link">Mimino</a>
       <a href="" class="logo-small link">restaurant-hotel complex</a>
     </div>
-
-    <ul class="header-social-list">
-      <li class="header-social-item">
+    <ul class="menu-social-list table-social">
+      <li class="menu-social-item">
         <a href="https://www.instagram.com/" class="header-social-list-link">
           <svg class="header-social-icon" width="20" height="20">
             <use href="./img/svg-images/icons.svg#icon-instagram-menu"></use>
@@ -67,20 +106,6 @@
       </li>
     </ul>
   </div>
-</header>
-
-<div class="menu-container js-menu-container" id="mobile-menu">
-  <div class="menu-header">
-    <button class="js-close-menu btn-close">
-      <svg class="close-icon" width="14" height="14">
-        <use href="./img/svg-images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <div class="header-logo menu-logo">
-      <a href="" class="logo-big link">Mimino</a>
-      <a href="" class="logo-small link">restaurant-hotel complex</a>
-    </div>
-  </div>
   <ul class="menu-list list">
     <li class="menu-list-item">
       <a href="./index.html" class="header-list-link link">Home</a>
@@ -92,8 +117,7 @@
       <a href="./restaurant.html" class="header-list-link link">Restaurant</a>
     </li>
   </ul>
-
-  <ul class="menu-social-list">
+  <ul class="menu-social-list mobile-social">
     <li class="menu-social-item">
       <a href="https://www.instagram.com/" class="header-social-list-link">
         <svg class="header-social-icon" width="20" height="20">
