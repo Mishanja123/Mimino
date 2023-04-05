@@ -4,11 +4,15 @@
 
     margin-left: auto;
     margin-right: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .hd-title-box {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    margin-bottom: 32px;
     gap: 32px;
 }
 
@@ -16,7 +20,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 68px;
+    font-size: 40px;
     line-height: 1;
 
     letter-spacing: -0.02em;
@@ -31,8 +35,8 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.2;
-
+    line-height: 1.3;
+    
     letter-spacing: -0.02em;
     text-transform: uppercase;
 
@@ -46,7 +50,7 @@
     justify-content: left;
     column-gap: 20px;
 
-    /* margin-bottom: 40px; */
+    margin-bottom: 40px;
 }
 
 .hd-arr-right {
@@ -60,26 +64,14 @@
 .hd-btns {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
     
     column-gap: 14px;
 
     /* margin-bottom: 40px; */
 }
 
-.hd-btn {
-    /* background-color: rgba(18, 18, 18, 1); */
-    /* font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
 
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-
-    color: #f7f7f7; */
-}
 
 .dh-two-img-mbl {
     display: flex;
@@ -92,7 +84,7 @@
     row-gap: 27px;
     column-gap: 20px;
 
-    margin-top: 32px;
+    
     margin-bottom: 18px;
 }
 
@@ -123,16 +115,23 @@
 
 @media screen and (min-width: 768px) {
     .hotel-details {
-        
+        padding-top: 44px;
+        padding-bottom: 44px;
     }
 
     .hd-title-box {
         flex-direction: row;
+        align-items: center;
         column-gap: 32px;
+        margin-bottom: 80px;
+    }
+    .hd-title {
+        font-size: 68px;
+        line-height: 1;
     }
 
     .hd-paragraph {
-        min-width: ;
+        min-width: 362px;
         margin-bottom: 0;
     }
 
@@ -143,6 +142,7 @@
     .dh-cards {
         display: flex;
         gap: 16px;
+        margin-bottom: 40px;
     }
 
     .dh-two-cards {
@@ -174,6 +174,12 @@
     .dh-cream-desk {
         width: 176px;
         height: 142px;
+    }
+    .hd-arrs {
+        display: none;
+    }
+    .hd-btns {
+        
     }
 }
 
@@ -239,6 +245,26 @@
         right: 32px; */
     }
     .hd-arrs {
+        display: none;
+    }
+}
+
+
+.desk-btn-box {
+    display: none;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .desk-btn-box {
+        display: flex;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .mob-btn-box {
         display: none;
     }
 }
