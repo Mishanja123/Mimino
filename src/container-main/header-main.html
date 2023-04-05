@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header hidek">
   <div class="header-wrapper container">
     <button
       class="menu-toggle js-open-menu"
@@ -155,17 +155,17 @@
 
   const scrollPosition = () =>
     window.pageYOffset || document.documentElement.scrollTop;
-  const containHide = () => header.classList.contains('hide');
+  const containHide = () => header.classList.contains('hidek');
   window.addEventListener('scroll', () => {
     if (
       scrollPosition() > lastScroll &&
       !containHide() &&
       scrollPosition() > defaultOffset
     ) {
-      header.classList.add('hide');
+      header.classList.add('hidek');
       //scroll down
     } else if (scrollPosition() < lastScroll && containHide()) {
-      header.classList.remove('hide');
+      header.classList.remove('hidek');
       //scroll up
     }
 

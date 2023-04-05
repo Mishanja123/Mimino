@@ -10,7 +10,7 @@
     transition: all .8s cubic-bezier(0.25, 0.1, 0.05, 1.1);
     border-bottom: 0.5px solid rgba(189, 195, 199, 0.5);
 }
-.header.hide {
+.header.hidek {
     transform: translateY(-100%);
 }
 /* tablet */
