@@ -78,7 +78,6 @@
 
         background-image: url(../img/images/hero/main-page-hero-desc@1x.webp);
         background-size: 542px 770px;
-        background-position: ;
         background-position: 100% 0px;
         margin-bottom: 64px;
     }
@@ -202,11 +201,11 @@
         flex-direction: row;
     }
 }
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
     .hero-desc-list {
    
     }
-}
+} */
 
 
 
