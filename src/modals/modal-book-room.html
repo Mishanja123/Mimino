@@ -7,24 +7,25 @@
       </svg>
     </button>
     <strong class="title-of-modal">BOOK A <snip class="title-of-modal-italic">ROOM</snip></strong>
+
     <form action="" class="form-room">
       <div class="labels-grid">
 
         <label class="modal-label">
-          <input type="text" class="modal-input" />
+          <input type="text" class="modal-input" required/>
           <span class="modal-label-name">YOUR NAME</span>
           <span class="modal-under-input">Who should book a room for?</span>
         </label>
 
         <label class="modal-label">
-          <input type="tel" class="modal-input modal-input-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/>
+          <input type="tel" class="modal-input modal-input-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
           <span class="modal-label-phone">+380</span>
           <span class="modal-under-input">PHONE NUMBER</span>
         </label>
 
         <label class="modal-label">
           <span></span>
-       <input type="date" class="modal-input">
+       <input type="date" class="modal-input" required>
           <span class="modal-under-input">Check-in date</span>
           <svg class="arrow-down" width="9" height="9">
         <use href="./img/icons.svg#icon-arr-down"></use>
@@ -32,7 +33,7 @@
         </label>
 
         <label class="modal-label">
-          <input type="date" class="modal-input">
+          <input type="date" class="modal-input" required>
             <span class="modal-under-input">Check-out date</span>
           <svg class="arrow-down" width="9" height="9">
         <use href="./img/icons.svg#icon-arr-down"></use>
@@ -43,7 +44,7 @@
           <label class="modal-label">
               <span></span>
               <!-- <input type="" class="modal-input" /> -->
-              <select name="number-category" class="modal-input">
+              <select name="number-category" class="modal-input" required>
                 <option value="double">DOUBLE LUXURY ROOM</option>
                 <option value="triple">Triple Room</option>
                 <option value="four-seater" selected>four-seater room</option>

@@ -1,42 +1,54 @@
 <!--Modal BOOK A TABLE-->
-<div class="backdrop is-hidden" data-modal-table>
+<!-- <div class="backdrop is-hidden" data-modal-table> -->
   <div class="modal modal-room">
-    <button class="modal-btn" type="button" data-modal-table-close>
+    <button class="modal-close-btn" type="button" data-modal-table-close>
       <svg class="customers-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-header-menu-close"></use>
       </svg>
     </button>
-    <strong class="title-of-modal">BOOK A TABLE</strong>
+    <strong class="title-of-modal">BOOK A <snip class="title-of-modal-italic">TABLE</snip></strong>
     <form action="" class="form">
-      <div>
+
+      <div class="labels-grid">
+
         <label class="modal-label">
-          YOUR NAME
-          <input type="text" class="modal-input" />
-          <span class="modal-under-input">WHO SHOULD BOOK A TABLE FOR?</span>
+          <input type="text" class="modal-input" placeholder=" " required/>
+          <span class="modal-label-name">YOUR NAME</span>
+          <span class="modal-under-input">Who should book a table for?</span>
+        </label>
+
+        <label class="modal-label">
+          <select name="number-people" class="modal-input modal-input-number" required>
+            <option value="blank" selected> </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+          <span class="modal-label-number">NUMBER OF PEOPLE</span>
         </label>
         <label class="modal-label">
-          NUMBER OF PEOPLE
-          <input
-            type="number"
-            class="modal-input"
-            name="number_of_people"
-            min="1"
-            max="12"
-          />
-        </label>
-      </div>
-      <div>
-        <label class="modal-label">
-          TODAY
-          <input type="date" class="modal-input" />
-          <span class="modal-under-input">WHAT DATE TO BOOK?</span>
-        </label>
-        <label class="modal-label">
-          <input type="tel" class="modal-input" placeholder="+38()" />
+          <input type="tel" class="modal-input modal-input-phone" pattern="[0-9]{9}" required/>
+          <span class="modal-label-phone">+380</span>
           <span class="modal-under-input">PHONE NUMBER</span>
         </label>
+        <label class="modal-label">
+          <span></span>
+       <input type="date" class="modal-input" required>
+          <span class="modal-under-input">What date to book?</span>
+          <svg class="arrow-down" width="9" height="9">
+        <use href="./img/icons.svg#icon-arr-down"></use>
+      </svg>
+        </label>
+
       </div>
+      <button type="submit" class="modal-btn btn btn-light">MAKE A RESERVATION</button>
     </form>
-    <button type="submit" class="modal-button">MAKE A RESERVATION</button>
   </div>
 </div>

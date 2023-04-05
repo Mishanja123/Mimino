@@ -28,9 +28,7 @@
 @import url('./room.css/amenities.css');
 @import url('./room.css/hero.css');
 
-@import url('./modals/modal-book-room.css');
-@import url('./modals/modal-book-table.css');
-@import url('./modals/modal-prices-room.css');
+@import url('./modals/modals.css');
 
 @import url('./footer.css');
 
