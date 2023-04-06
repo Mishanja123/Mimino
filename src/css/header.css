@@ -3,16 +3,18 @@
     opacity: 0.7;
     height: 78px;
     position: fixed;
-    z-index: 999;
+    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
     transition: all .8s cubic-bezier(0.25, 0.1, 0.05, 1.1);
     border-bottom: 0.5px solid rgba(189, 195, 199, 0.5);
+    
 }
-.header.hidek {
+.header.hidden {
     transform: translateY(-100%);
 }
+
 /* tablet */
 /* @media screen and (min-width: 768px) {
     .header {
