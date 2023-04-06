@@ -22,7 +22,7 @@
 
     
     <script type="module" crossorigin src="/project-1/assets/modal-book-room-6117a94e.js"></script>
-    <link rel="stylesheet" href="/project-1/assets/modal-book-room-9d1c7785.css">
+    <link rel="stylesheet" href="/project-1/assets/modal-book-room-aa2ea322.css">
   </head>
   <body>
     <!-- Header -->
@@ -207,7 +207,9 @@
     <div class="try">
       <ul class="hero-btn-list">
         <li class="hero-btn-list-ithem">
-          <button class="main-page-btn btn" type="button">book a room</button>
+          <button class="main-page-btn btn" type="button" data-modal-room-open>
+            book a room
+          </button>
         </li>
         <li class="hero-btn-list-ithem">
           <button class="main-page-btn btn" type="button">book a table</button>
@@ -638,6 +640,7 @@
           <button
             class="btn btn-light hd-btn"
             type="button"
+            data-modal-room-open
           >
             BOOK A ROOM
           </button>
@@ -845,6 +848,7 @@
           <button
             class="btn btn-light hd-btn"
             type="button"
+            data-modal-room-open
           >
             BOOK A ROOM
           </button>
@@ -998,7 +1002,7 @@
     </footer>
     <!-- Modals -->
     <!--Modal BOOK A ROOM-->
-<div class="backdrop is-hidden" data-modal-room>
+<div class="backdrop is-hidden" data-modal-room id="modal-book-room">
   <div class="modal modal-room">
     <button class="modal-close-btn" type="button" data-modal-room-close>
       <svg class="customers-icon" width="24" height="24">
