@@ -14,7 +14,8 @@
     />
     
     <script type="module" crossorigin src="/project-1/assets/mobile-menu-bcdd80d5.js"></script>
-    <link rel="stylesheet" href="/project-1/assets/mobile-menu-8fa1adc4.css">
+    <script type="module" crossorigin src="/project-1/assets/modal-book-table-1fbcba50.js"></script>
+    <link rel="stylesheet" href="/project-1/assets/mobile-menu-21e36e3f.css">
   </head>
   <body>
     <!-- header -->
@@ -165,7 +166,9 @@
         <h1 class="restaurant-title">Restaurant</h1>
         <ul class="btns-rest-hero list">
           <li>
-            <button class="btn btn-dark" type="button">BOOK A TABLE</button>
+            <button class="btn btn-dark" type="button" data-modal-table-open>
+              BOOK A TABLE
+            </button>
           </li>
           <li>
             <button class="btn btn-dark" type="button">VIEW A MENU</button>
@@ -660,7 +663,7 @@
     <!--Modal BOOK A ROOM-->
 <div class="backdrop is-hidden" data-modal-room id="modal-book-room">
   <div class="modal modal-room">
-    <button class="modal-close-btn" type="button" data-modal-room-close>
+    <button class="modal-close-btn" type="button" data-modal-room-close >
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -832,6 +835,10 @@
   }
 </script>
 
+
+    <!-- Scripts -->
+
+    
 
     
   </body>

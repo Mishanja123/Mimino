@@ -1,0 +1,1 @@
+(()=>{const e={openModalTableBtn:document.querySelector("[data-modal-table-open]"),closeModalTableBtn:document.querySelector("[data-modal-table-close]"),modal:document.querySelector("[data-modal-table]")};e.openModalTableBtn.addEventListener("click",l),e.closeModalTableBtn.addEventListener("click",l);function l(){e.modal.classList.toggle("is-hidden"),console.log(e)}})();
