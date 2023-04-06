@@ -233,10 +233,26 @@
         width: 320px;
         height: 260px;
     }
-
+    .wrapper-img{
+        width: 320px;
+        height: 260px;
+        overflow: hidden;
+    }
+    .wrapper-img-hero {
+        width: 420px;
+        height: 548px;
+        overflow: hidden;
+    }
     .dh-cream-desk {
         width: 320px;
         height: 260px;
+       
+    }
+    .hover-img{
+        transition: 0.3s;
+    }
+    .hover-img:hover {
+        transform: scale(1.1);
     }
 
     .hd-btns {
