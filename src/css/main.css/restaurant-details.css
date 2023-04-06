@@ -1,4 +1,8 @@
 /* restaurant details section */
+.restaurant-details {
+    padding-bottom: 50px;
+}
+
 .title-restaurant {
     font-weight: 500;
     font-size: 40px;
@@ -50,12 +54,15 @@
         gap: 32px;
     }
 }
-
+.mb-img-hidden {
+    margin-bottom: 20px;
+}
 @media screen and (min-width: 768px) {
     .mb-img-hidden {
         display: none;
     }
 }
+
 
 @media screen and (max-width: 767px),
 (min-width: 1440px) {
@@ -75,10 +82,6 @@
     height: 309px;
 }
 
-.container.restaurant-details {
-    padding-bottom: 50px;
-    padding-top: 60px;
-}
 
 .restaurant-btn {
     display: flex;
@@ -104,7 +107,7 @@
         display: none;
     }
 
-    .restaurant-details .dsk-img-hidden {
+    .restaurant-details .dsk-img-hidden-rest {
         margin-left: 0;
     }
 
