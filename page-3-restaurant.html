@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/project-1/assets/mobile-menu-bcdd80d5.js"></script>
-    <link rel="stylesheet" href="/project-1/assets/mobile-menu-aa2ea322.css">
+    <link rel="stylesheet" href="/project-1/assets/mobile-menu-bd670b08.css">
   </head>
   <body>
     <!-- header -->
@@ -135,17 +135,17 @@
 
   const scrollPosition = () =>
     window.pageYOffset || document.documentElement.scrollTop;
-  const containHide = () => header.classList.contains('hidek');
+  const containHide = () => header.classList.contains('hidden');
   window.addEventListener('scroll', () => {
     if (
       scrollPosition() > lastScroll &&
       !containHide() &&
       scrollPosition() > defaultOffset
     ) {
-      header.classList.add('hidek');
+      header.classList.add('hidden');
       //scroll down
     } else if (scrollPosition() < lastScroll && containHide()) {
-      header.classList.remove('hidek');
+      header.classList.remove('hidden');
       //scroll up
     }
 
