@@ -12,10 +12,22 @@
 
 .hero-restaurant {
     background: rgba(246, 246, 246, 1);
-    max-width: 375px;
+   
 
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+    .hero-restaurant {
+       
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .hero-restaurant {
+        
+        padding-bottom: 30px;
+    }
 }
 
 .btns-rest-hero {
@@ -79,11 +91,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .hero-restaurant {
-        max-width: 768px;
-
-        padding-bottom: 120px;
-    }
 
     .restaurant-title {
         margin-bottom: 32px;
@@ -116,10 +123,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .hero-restaurant {
-        max-width: 1440px;
-        padding-bottom: 82px;
-    }
+  
 
     .rest-wrapper-lpt {
         display: flex;

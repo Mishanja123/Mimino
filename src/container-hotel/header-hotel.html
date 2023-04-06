@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header header-light hidek">
   <div class="header-wrapper container">
     <button
       class="menu-toggle js-open-menu"
@@ -10,57 +10,55 @@
       </svg>
     </button>
     <nav class="navigation">
-      <ul class="header-list list">
-        <li class="header-list-item">
-          <a href="/project-1/index.html" class="header-list-link link">Home</a>
+      <ul class="nav-list list">
+        <li class="nav-item">
+          <a href="/project-1/index.html" class="nav-link link">Home</a>
         </li>
-        <li class="header-list-item">
-          <a
-            href="/project-1/page-2-hotel.html"
-            class="header-list-link link current"
+        <li class="nav-item">
+          <a href="/project-1/page-2-hotel.html" class="nav-link link current"
             >Hotel</a
           >
         </li>
-        <li class="header-list-item">
-          <a
-            href="/project-1/page-3-restaurant.html"
-            class="header-list-link link"
+        <li class="nav-item">
+          <a href="/project-1/page-3-restaurant.html" class="nav-link link"
             >Restaurant</a
           >
         </li>
       </ul>
     </nav>
-    <div class="header-logo">
-      <a href="" class="logo-big link">Mimino</a>
-      <a href="" class="logo-small link">restaurant-hotel complex</a>
+    <div class="header-try">
+      <div class="logo-box">
+        <a href="" class="logo-big link">Mimino</a>
+        <a href="" class="logo-small link">restaurant-hotel complex</a>
+      </div>
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a href="https://www.instagram.com/" class="header-social-list-link">
+            <svg class="header-social-icon" width="20" height="20">
+              <use href="./img/svg-images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="https://www.facebook.com/" class="header-social-list-link">
+            <svg class="header-social-icon" width="20" height="20">
+              <use href="./img/svg-images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="https://twitter.com/" class="header-social-list-link">
+            <svg class="header-social-icon" width="20" height="20">
+              <use href="./img/svg-images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <ul class="header-social-list">
-      <li class="header-social-item">
-        <a href="https://www.instagram.com/" class="header-social-list-link">
-          <svg class="header-social-icon" width="20" height="20">
-            <use href="./img/svg-images/icons.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-social-item">
-        <a href="https://www.facebook.com/" class="header-social-list-link">
-          <svg class="header-social-icon" width="20" height="20">
-            <use href="./img/svg-images/icons.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-social-item">
-        <a href="https://twitter.com/" class="header-social-list-link">
-          <svg class="header-social-icon" width="20" height="20">
-            <use href="./img/svg-images/icons.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
   </div>
 </div>
 
+<!-- mobile menu -->
 <div class="menu-container js-menu-container" id="mobile-menu">
   <div class="menu-header">
     <button class="js-close-menu btn-close">
@@ -109,3 +107,27 @@
     </li>
   </ul>
 </div>
+<script>
+  let lastScroll = 0;
+  const defaultOffset = 50;
+  const header = document.querySelector('.header');
+
+  const scrollPosition = () =>
+    window.pageYOffset || document.documentElement.scrollTop;
+  const containHide = () => header.classList.contains('hidek');
+  window.addEventListener('scroll', () => {
+    if (
+      scrollPosition() > lastScroll &&
+      !containHide() &&
+      scrollPosition() > defaultOffset
+    ) {
+      header.classList.add('hidek');
+      //scroll down
+    } else if (scrollPosition() < lastScroll && containHide()) {
+      header.classList.remove('hidek');
+      //scroll up
+    }
+
+    lastScroll = scrollPosition();
+  });
+</script>
