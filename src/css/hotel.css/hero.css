@@ -1,37 +1,25 @@
 
 .hotel-hero {
 
-    padding-top: 100px;
-    margin-bottom: 64px;
+    padding-top: 120px;
+    padding-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
     .hotel-hero {
         padding-bottom: 40px;
-        margin-bottom: 80px;
+        padding-bottom: 120px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .hotel-hero {
-        padding-bottom: 30px;
-        margin-bottom: 100px;
-        position: relative;
+        padding-top: 100px;
+        padding-bottom: 130px;
+        
     }
 }
 
-
-.hotel-hero-box1 {}
-
-@media screen and (min-width: 768px) {
-    .hotel-hero-box1 {}
-}
-
-@media screen and (min-width: 1440px) {
-    .hotel-hero-box1 {
-        min-width: 361px;
-    }
-}
 
 .hotel-hero-box2 {}
 
@@ -41,8 +29,21 @@
 
 @media screen and (min-width: 1440px) {
     .hotel-hero-box2 {
+       margin-top: 180px;
+       
+    }
+}
+
+.hotel-hero-box1 {}
+
+@media screen and (min-width: 768px) {
+    .hotel-hero-box1 {}
+}
+
+@media screen and (min-width: 1440px) {
+    .hotel-hero-box1 {
         display: flex;
-        gap: 320px;
+        gap: 360px;
     }
 }
 
@@ -70,12 +71,13 @@
     text-transform: uppercase;
     color: var(--primary-dark-color);
 
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
     .heading-hotel {
         font-size: 80px;
+        margin-bottom: 32px;
     }
 }
 
@@ -89,8 +91,8 @@
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 14px;
-    line-height: 1, 3;
-    /* letter-spacing: 0.05em; */
+    line-height: 1.4;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
 
 }
@@ -103,70 +105,67 @@
 
 @media screen and (min-width: 1440px) {
     .paragraph-ht {
-        position: absolute;
-        top: 572px;
-        left: 32px;
     }
 }
 
+@media screen and (max-width: 1439px) {
+.table-p-hidden {
+ display: none;
+}
+}
+@media screen and (min-width: 1440px) {
+.desk-p-hidden {
+    display: none;
+}
+}
+
+.btn-hotel-div:last-child {
+    margin-bottom: 0;
+}
 
 .btn-hotel-div {
     display: flex;
     gap: 16px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .btn-hotel-div {}
-}
-
-@media screen and (min-width: 1440px) {
-    .btn-hotel-div {}
-}
-
-.slider-btn-box {
-
-    display: flex;
-    gap: 60px;
-    justify-content: flex-end;
-    padding-bottom: 51px;
-}
-
-@media screen and (min-width: 768px) {
-    .slider-btn-box {}
-}
-
-@media screen and (min-width: 1440px) {
-    .slider-btn-box {
-        justify-content: start;
-        margin-left: 705px;
-        padding-bottom: 0;
+    .btn-hotel-div {
+        margin-bottom: 54px;
     }
 }
 
-.slider-btn {
-
-    display: none;
-    border: none;
+@media screen and (min-width: 1440px) {
+    .btn-hotel-div {
+        margin-bottom: 204px;
+        
+    }
+    
 }
 
+
+
+
+
+
+
+
+.hotel-img-wrapper {
+   
+    overflow: hidden;
+    height: 580px;
+}
 @media screen and (min-width: 768px) {
-    .slider-btn {}
+    .hotel-img-box {
+        gap: 32px;
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-    .slider-btn {}
-}
-
-
-.slider-btn-svg {}
-
-@media screen and (min-width: 768px) {
-    .slider-btn-svg {}
-}
-
-@media screen and (min-width: 1440px) {
-    .slider-btn-svg {}
+    .hotel-img-box {
+        
+    }
 }
 
 .img-hidden {
@@ -177,38 +176,102 @@
 
 .hotel-img-box {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    overflow: hidden;
-    padding-bottom: 35px;
-
 }
-
 @media screen and (min-width: 768px) {
     .hotel-img-box {
-        gap: 32px;
-
+    
     }
 }
-
 @media screen and (min-width: 1440px) {
     .hotel-img-box {
-        gap: 32px;
-        padding-bottom: 52px;
+        
     }
 }
 
 .img-hh {
     min-width: 250px;
+    
 }
 
 @media screen and (min-width: 768px) {
     .img-hh {
         min-width: 436px;
+
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .img-hh {}
+    .img-hh {
+    }
 }
 
+.slider-btn-box {
+
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .slider-btn-box {}
+}
+
+@media screen and (min-width: 1440px) {
+    .slider-btn-box {
+        margin-bottom: 0;
+        justify-content: start;
+       
+    }
+}
+
+.slider-btn {
+/* 
+    display: none;
+    border: none; */
+}
+
+@media screen and (min-width: 768px) {
+    .slider-btn {}
+}
+
+@media screen and (min-width: 1440px) {
+    .slider-btn {}
+}
+
+
+.slider-btn-svg {
+   
+    
+}
+
+@media screen and (min-width: 768px) {
+    .slider-btn-svg {}
+}
+
+@media screen and (min-width: 1440px) {
+    .slider-btn-svg {}
+}
+
+.slider-container {
+    width: 436px;
+    height: 429px;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .slider-container {
+        height: 548px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .slider-container {
+        height: 580px;
+    }
+}
+.slider-track {
+    height: 580px;
+    display: flex;
+    transition-duration: .5s;
+}
