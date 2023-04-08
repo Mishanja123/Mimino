@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/project-1/assets/mobile-menu-bcdd80d5.js"></script>
     <script type="module" crossorigin src="/project-1/assets/modal-price-26095c68.js"></script>
     <script type="module" crossorigin src="/project-1/assets/modal-book-table-292fd2f9.js"></script>
-    <link rel="stylesheet" href="/project-1/assets/mobile-menu-5d4f80dd.css">
+    <link rel="stylesheet" href="/project-1/assets/mobile-menu-4d521f3b.css">
   </head>
   <body>
     <!-- header -->
@@ -164,21 +164,29 @@
     <main>
       <section>
         <section class="hotel-hero">
-  <div class="container">
+  <div class="container hotel-hero-box1">
     <div class="hotel-hero-box2">
-      <div class="hotel-hero-box1">
-        <h1 class="heading-hotel">Hotel</h1>
-        <div class="btn-hotel-div">
-          <button type="button" class="btn btn-dark" data-modal-room-open>
-            book a room
-          </button>
-          <button type="button" class="btn btn-dark" modal-price-open>
-            View prices
-          </button>
+      <h1 class="heading-hotel">Hotel</h1>
+      <div class="btn-hotel-div">
+        <div class="hotel-hero-box3">
+          <div class="btn-hotel-div">
+            <button type="button" class="btn btn-dark" data-modal-room-open>
+              book a room
+            </button>
+            <button type="button" class="btn btn-dark" modal-price-open>
+              View prices
+            </button>
+          </div>
+          <p class="paragraph-ht table-p-hidden">
+            Whether you're in the mood for a hearty breakfast, a light lunch, or
+            a romantic dinner, our menu has something for everyone.
+          </p>
         </div>
       </div>
-      <div class="hotel-img-box">
-        <picture>
+    </div>
+    <div class="slider-container">
+      <div class="slider-track">
+        <picture class="slider-item">
           <source
             media="(min-width:1200px)"
             srcset="/project-1/assets/hero_desk@1x-1e47b0c9.webp 1x, /project-1/assets/hero_desk@2x-a37cd88f.webp 2x"
@@ -217,106 +225,103 @@
             class="img-hh"
           />
         </picture>
-        <div class="img-hidden">
-          <picture>
-            <source
-              media="(min-width:1200px)"
-              srcset="/project-1/assets/hero2_desk@1x-ca9591ab.webp 1x, /project-1/assets/hero2_desk@2x-724a8ba4.webp 2x"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:1200px)"
-              srcset="/project-1/assets/hero2_desk@1x-152175c2.jpg 1x, /project-1/assets/hero2_desk@2x-f810c511.jpg 2x"
-              type="image/jpg"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="/project-1/assets/hero2_tab@1x-02f0a3c0.webp 1x, /project-1/assets/hero2_tab@2x-28d69bf9.webp 2x"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="/project-1/assets/hero2_tab@1x-01b47798.jpg 1x, /project-1/assets/hero2_tab@2x-7925afe2.jpg 2x"
-              type="image/jpg"
-            />
-            <source
-              media="(max-width:767px)"
-              srcset="/project-1/assets/hero2_mob@1x-857d922a.webp 1x, /project-1/assets/hero2_mob@2x-08b4cfc6.webp 2x"
-              type="image/webp"
-            />
-            <source
-              media="(max-width:767px)"
-              srcset="/project-1/assets/hero2_mob@1x-cd10391e.jpg 1x, /project-1/assets/hero2_mob@2x-67c6fdd1.jpg 2x"
-              type="image/jpg"
-            />
-            <img
-              src="/project-1/assets/hero2_mob@1x-cd10391e.jpg"
-              alt="hero2"
-              width="250"
-              height="429"
-              class="img-hh"
-            />
-          </picture>
-          <picture>
-            <source
-              media="(min-width:1200px)"
-              srcset="/project-1/assets/hero3_desk@1x-e907f3d9.webp 1x, /project-1/assets/hero3_desk@2x-fc644202.webp 2x"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:1200px)"
-              srcset="/project-1/assets/hero3_desk@1x-960ae7ad.jpg 1x, /project-1/assets/hero3_desk@2x-3eb81cb2.jpg 2x"
-              type="image/jpg"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="/project-1/assets/hero3_tab@1x-fcb285c9.webp 1x, /project-1/assets/hero3_tab@2x-83974815.webp 2x"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="/project-1/assets/hero3_tab@1x-d954c109.jpg 1x, /project-1/assets/hero3_tab@2x-f1146bf7.jpg 2x"
-              type="image/jpg"
-            />
-            <source
-              media="(max-width:767px)"
-              srcset="/project-1/assets/hero3_mob@1x-0e1b49b9.webp 1x, /project-1/assets/hero3_mob@2x-c1161459.webp 2x"
-              type="image/webp"
-            />
-            <source
-              media="(max-width:767px)"
-              srcset="/project-1/assets/hero3_mob@1x-29cffd44.jpg 1x, /project-1/assets/hero3_mob@2x-d9a49ab2.jpg 2x"
-              type="image/jpg"
-            />
-            <img
-              src="/project-1/assets/hero3_mob@1x-29cffd44.jpg"
-              alt="hero3"
-              width="250"
-              height="429"
-              class="img-hh"
-            />
-          </picture>
-        </div>
+        <picture class="slider-item">
+          <source
+            media="(min-width:1200px)"
+            srcset="/project-1/assets/hero2_desk@1x-ca9591ab.webp 1x, /project-1/assets/hero2_desk@2x-724a8ba4.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:1200px)"
+            srcset="/project-1/assets/hero2_desk@1x-152175c2.jpg 1x, /project-1/assets/hero2_desk@2x-f810c511.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/hero2_tab@1x-02f0a3c0.webp 1x, /project-1/assets/hero2_tab@2x-28d69bf9.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/hero2_tab@1x-01b47798.jpg 1x, /project-1/assets/hero2_tab@2x-7925afe2.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/project-1/assets/hero2_mob@1x-857d922a.webp 1x, /project-1/assets/hero2_mob@2x-08b4cfc6.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/project-1/assets/hero2_mob@1x-cd10391e.jpg 1x, /project-1/assets/hero2_mob@2x-67c6fdd1.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            src="/project-1/assets/hero2_mob@1x-cd10391e.jpg"
+            alt="hero2"
+            width="250"
+            height="429"
+            class="img-hh"
+          />
+        </picture>
+        <picture class="slider-item">
+          <source
+            media="(min-width:1200px)"
+            srcset="/project-1/assets/hero3_desk@1x-e907f3d9.webp 1x, /project-1/assets/hero3_desk@2x-fc644202.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:1200px)"
+            srcset="/project-1/assets/hero3_desk@1x-960ae7ad.jpg 1x, /project-1/assets/hero3_desk@2x-3eb81cb2.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/hero3_tab@1x-fcb285c9.webp 1x, /project-1/assets/hero3_tab@2x-83974815.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/project-1/assets/hero3_tab@1x-d954c109.jpg 1x, /project-1/assets/hero3_tab@2x-f1146bf7.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/project-1/assets/hero3_mob@1x-0e1b49b9.webp 1x, /project-1/assets/hero3_mob@2x-c1161459.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/project-1/assets/hero3_mob@1x-29cffd44.jpg 1x, /project-1/assets/hero3_mob@2x-d9a49ab2.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            src="/project-1/assets/hero3_mob@1x-29cffd44.jpg"
+            alt="hero3"
+            width="250"
+            height="429"
+            class="img-hh"
+          />
+        </picture>
       </div>
-    </div>
-    <div class="tablet-box">
       <div class="slider-btn-box">
         <button class="slider-btn" type="button">
           <svg class="slider-btn-svg" width="24" height="24">
-            <use href="/project-1/assets/icons-f89c3f39.svg#arr-left"></use>
+            <use href=""></use>
           </svg>
         </button>
         <button class="slider-btn" type="button">
           <svg class="slider-btn-svg" width="24" height="24">
-            <use href="/project-1/assets/icons-f89c3f39.svg#arr-right"></use>
+            <use href=""></use>
           </svg>
         </button>
       </div>
-      <p class="paragraph paragraph-ht">
-        Whether you're in the mood for a hearty breakfast, a light lunch, or a
-        romantic dinner, our menu has something for everyone.
-      </p>
     </div>
+
+    <p class="paragraph-ht desk-p-hidden">
+      Whether you're in the mood for a hearty breakfast, a light lunch, or a
+      romantic dinner, our menu has something for everyone.
+    </p>
   </div>
 </section>
 
