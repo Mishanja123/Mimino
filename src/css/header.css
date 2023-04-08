@@ -97,7 +97,12 @@
     line-height: 18px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    transition: 0.4s;
 }
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
 .nav-link {
     padding: 27px 0 32px 0;
 }
@@ -135,6 +140,12 @@
     .header-social-list {
         gap: 16px;
     }
+}
+.header-social-item {
+ transition: 0.4s;
+}
+.header-social-item:hover {
+    transform: scale(1.2);
 }
 .header-social-link {
     padding: 29px 0 27px 0;
