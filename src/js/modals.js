@@ -11,47 +11,36 @@ const close_modal_room = document.querySelector("[data-modal-btn=close_room]");
 const close_modal_table = document.querySelector("[data-modal-btn=close_table]");
 const close_modal_price = document.querySelector("[data-modal-btn=close_price]");
 
-// add
-if (close_modal_room) {
+
     close_modal_room.onclick = () => {
         room_window.classList.remove("active");
     }
-}
 
-if (close_modal_table) {
     close_modal_table.onclick = () => {
         table_window.classList.remove("active");
     }
-}
 
-if (close_modal_price) {
     close_modal_price.onclick = () => {
         price_window.classList.remove("active");
     }
-}
 
-// remove
-if (room_buttons) {
+
     room_buttons.forEach((button) => {
         button.onclick = () => {
             room_window.classList.add("active");
         };
     });
-}
 
-if (table_buttons) {
     table_buttons.forEach((button) => {
         button.onclick = () => {
             table_window.classList.add("active");
         };
     });
-}
 
-if (price_buttons) {
     price_buttons.forEach((button) => {
         button.onclick = () => {
             price_window.classList.add("active");
         };
     });
-}
+
 
