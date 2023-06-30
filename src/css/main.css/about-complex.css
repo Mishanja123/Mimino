@@ -9,16 +9,16 @@
 }
 
 /* main class */
-
+/* 
 .section {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 64px;
+    padding-bottom: 64px;
 }
 
 @media screen and (min-width: 1400px) {
     .section {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 }
 .about-section-list {
@@ -31,9 +31,9 @@
     .about-section-list {
         gap: 100px;
     }
-}
+} */
 
-.about-section {
+/* .about-section {
     max-width: 375px;
 }
 
@@ -47,7 +47,7 @@
     .about-section {
         max-width: 1440px;
     }
-}
+} */
 
 .about-list-ithem {
     position: relative;
