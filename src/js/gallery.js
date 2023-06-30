@@ -1,4 +1,6 @@
 import { galleryItems } from './gallery-items.js';
+// import SimpleLightbox from "simplelightbox";
+// import "simplelightbox/dist/simple-lightbox.min.css";
 
 const list = document.querySelector('.gallery')
 
@@ -14,5 +16,5 @@ const addGalleryMarkup = createGalleryMarkup(galleryItems)
 // добавил шаблон разметки в ДОМ
 list.insertAdjacentHTML("beforeend", addGalleryMarkup)
 
-let lightbox = new SimpleLightbox('.gallery a', {});
+// let lightbox = new SimpleLightbox('.gallery a', {});
 

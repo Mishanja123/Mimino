@@ -19,6 +19,6 @@ if (navigator.geolocation)
         .openPopup();
     },
     function () {
-      alert('Could not get the location');
+      // alert('Could not get the location');
     }
   );

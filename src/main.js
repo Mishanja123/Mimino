@@ -1,6 +1,5 @@
-import './js/modal-price.js';
-import './js/modal-book-table.js';
-import './js/modal-book-room';
-import './js/mobile-menu.js';
-import './js/map.js';
-import './js/scroll.js';
+import './js/modals';
+import './js/mobile-menu';
+import './js/map';
+import './js/scroll';
+import './js/gallery'
