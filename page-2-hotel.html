@@ -13,10 +13,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/project-1/assets/mobile-menu-bcdd80d5.js"></script>
-    <script type="module" crossorigin src="/project-1/assets/modal-price-26095c68.js"></script>
-    <script type="module" crossorigin src="/project-1/assets/modal-book-table-292fd2f9.js"></script>
-    <link rel="stylesheet" href="/project-1/assets/mobile-menu-90568ac3.css">
+    <script type="module" crossorigin src="/project-1/assets/modals-56fae375.js"></script>
+    <link rel="stylesheet" href="/project-1/assets/modals-d466fa8f.css">
   </head>
   <body>
     <!-- header -->
@@ -170,10 +168,10 @@
       <div class="btn-hotel-div">
         <div class="hotel-hero-box3">
           <div class="btn-hotel-div">
-            <button type="button" class="btn btn-dark" data-modal-room-open>
+            <button type="button" class="btn btn-dark" data-modal-btn="room">
               book a room
             </button>
-            <button type="button" class="btn btn-dark" modal-price-open>
+            <button type="button" class="btn btn-dark" data-modal-btn="price">
               View prices
             </button>
           </div>
@@ -471,7 +469,7 @@
           <a class="btn btn-dark" href="./page-4-room.html">More details</a>
         </li>
         <li class="dr-btn-box-item">
-          <button type="button" class="btn btn-dark" modal-price-open-1>
+          <button type="button" class="btn btn-dark" data-modal-btn="price">
             View prices
           </button>
         </li>
@@ -567,9 +565,11 @@
   <div class="triple-desk-descr">
     <div class="triple-room-btn mb-hidden-triple-room">
       <button class="btn btn-dark" type="button">MORE DETAILS</button>
-      <button class="btn btn-dark" type="button">VIEW PRICES</button>
+      <button class="btn btn-dark" type="button" data-modal-btn="price">
+        VIEW PRICES
+      </button>
     </div>
-    <div class="desk-descr">
+    <div class="desk-descr-room">
       <div class="triple-room-descr">
         <h2 class="title-triple-room">TRIPLE ROOM</h2>
 
@@ -595,7 +595,11 @@
       </button>
     </li>
     <li>
-      <button class="btn btn-dark tr-room-btn" type="button">
+      <button
+        class="btn btn-dark tr-room-btn"
+        type="button"
+        data-modal-btn="price"
+      >
         VIEW PRICES
       </button>
     </li>
@@ -683,7 +687,7 @@
           <button class="btn btn-dark" type="button">More details</button>
         </li>
         <li class="btn-item">
-          <button class="btn btn-dark" type="button" modal-price-open-2>
+          <button class="btn btn-dark" type="button" data-modal-btn="price">
             View prices
           </button>
         </li>
@@ -749,9 +753,9 @@
     </footer>
     <!-- Modals -->
     <!--Modal PRICES PER ROOM-->
-<div class="backdrop" modal-price>
+<div class="backdrop" data-modal-window="price">
   <div class="modal">
-    <button class="modal-close-btn" type="button" modal-price-close>
+    <button class="modal-close-btn" type="button" data-modal-btn="close_price">
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -798,9 +802,9 @@
 
 
     <!--Modal BOOK A ROOM-->
-<div class="backdrop is-hidden" data-modal-room id="modal-book-room">
+<div class="backdrop" data-modal-window="room">
   <div class="modal modal-room">
-    <button class="modal-close-btn" type="button" data-modal-room-close >
+    <button class="modal-close-btn" type="button" data-modal-btn="close_room" >
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -859,9 +863,9 @@
 
 
     <!--Modal BOOK A TABLE-->
-<div class="backdrop" modal-table>
+<div class="backdrop" data-modal-window="table">
   <div class="modal modal-room">
-    <button class="modal-close-btn" type="button" modal-table-close>
+    <button class="modal-close-btn" type="button" data-modal-btn="close_table">
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -925,10 +929,6 @@
 
 
     <!-- Scripts -->
-
-    
-
-    
 
     
 

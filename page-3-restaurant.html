@@ -13,9 +13,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/project-1/assets/mobile-menu-bcdd80d5.js"></script>
-    <script type="module" crossorigin src="/project-1/assets/modal-book-table-292fd2f9.js"></script>
-    <link rel="stylesheet" href="/project-1/assets/mobile-menu-90568ac3.css">
+    <script type="module" crossorigin src="/project-1/assets/modals-56fae375.js"></script>
+    <link rel="stylesheet" href="/project-1/assets/modals-d466fa8f.css">
   </head>
   <body>
     <!-- header -->
@@ -170,7 +169,7 @@
         <h1 class="restaurant-title">Restaurant</h1>
         <ul class="btns-rest-hero list">
           <li>
-            <button class="btn btn-dark" type="button" modal-table-open>
+            <button class="btn btn-dark" type="button" data-modal-btn="table">
               BOOK A TABLE
             </button>
           </li>
@@ -607,7 +606,11 @@
         </ul>
       </div>
     </div>
-    <button type="button" class="order-button btn btn-light" modal-table-open-1>
+    <button
+      type="button"
+      class="order-button btn btn-light"
+      data-modal-btn="table"
+    >
       BOOK A TABLE
     </button>
   </div>
@@ -670,9 +673,9 @@
     </footer>
     <!-- Modals -->
     <!--Modal BOOK A TABLE-->
-<div class="backdrop" modal-table>
+<div class="backdrop" data-modal-window="table">
   <div class="modal modal-room">
-    <button class="modal-close-btn" type="button" modal-table-close>
+    <button class="modal-close-btn" type="button" data-modal-btn="close_table">
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -736,9 +739,9 @@
 
 
     <!--Modal BOOK A ROOM-->
-<div class="backdrop is-hidden" data-modal-room id="modal-book-room">
+<div class="backdrop" data-modal-window="room">
   <div class="modal modal-room">
-    <button class="modal-close-btn" type="button" data-modal-room-close >
+    <button class="modal-close-btn" type="button" data-modal-btn="close_room" >
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -797,9 +800,9 @@
 
 
     <!--Modal PRICES PER ROOM-->
-<div class="backdrop" modal-price>
+<div class="backdrop" data-modal-window="price">
   <div class="modal">
-    <button class="modal-close-btn" type="button" modal-price-close>
+    <button class="modal-close-btn" type="button" data-modal-btn="close_price">
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>

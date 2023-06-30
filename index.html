@@ -21,10 +21,16 @@
     />
 
     
-    <script type="module" crossorigin src="/project-1/assets/mobile-menu-bcdd80d5.js"></script>
-    <script type="module" crossorigin src="/project-1/assets/modal-price-26095c68.js"></script>
-    <script type="module" crossorigin src="/project-1/assets/modal-book-table-292fd2f9.js"></script>
-    <link rel="stylesheet" href="/project-1/assets/mobile-menu-90568ac3.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.13.0/simple-lightbox.min.css"
+      integrity="sha512-74F0rBF7EW+3OTwz2fa2b9sGBEPSe4orL76WxHMnuVtlYF9h2+WiycMvMWn+nC0SZ5sNcIzhbBHiNneZ6f8ZFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/project-1/assets/modals-56fae375.js"></script>
+    <link rel="stylesheet" href="/project-1/assets/modals-d466fa8f.css">
   </head>
   <body>
     <!-- Header -->
@@ -209,12 +215,16 @@
     <div class="try">
       <ul class="hero-btn-list">
         <li class="hero-btn-list-ithem">
-          <button class="main-page-btn btn" type="button" data-modal-room-open>
+          <button class="main-page-btn btn" type="button" data-modal-btn="room">
             book a room
           </button>
         </li>
         <li class="hero-btn-list-ithem">
-          <button class="main-page-btn btn" type="button" modal-table-open>
+          <button
+            class="main-page-btn btn"
+            type="button"
+            data-modal-btn="table"
+          >
             book a table
           </button>
         </li>
@@ -426,21 +436,23 @@
   <div class="container">
     <div class="desk-descr">
       <div class="rest-descr">
-        <h2 class="title-restaurant">RESTAURANT</h2>
+        <h2 class="title-restaurant">restaurant</h2>
         <p class="rest-description">
-          RELAX AND UNWIND WITH OUR</br> DELICIOUS OFFERINGS, AVAILABLE </br>
-           ANY TIME OF DAY.
+          Relax and unwind with our delicious offerings, available any time of day.
         </p>
       </div>
       <div class="restaurant-btn mb-hidden">
-        <button class="btn btn-dark" type="button" modal-table-open-1>Book a table</button>
+        <button class="btn btn-dark" type="button" data-modal-btn="table">Book a table</button>
         <button class="btn btn-dark" type="button">View the menu</button>
       </div>
     </div>
-    <ul class="img-list list mb-img-hidden">
+    <!-- <ul class="img-list list mb-img-hidden gallery">
       <li>
         <img
-                  srcset="/project-1/assets/rest-details1-mb-1x-2c9249cf.jpg 1x, /project-1/assets/rest-details1-mb-2x-56a8aa42.jpg 2x"
+                  srcset="
+                  ./img/mp-restaurants-details/rest-details1-mb-1x.jpg 1x,
+                  ./img/mp-restaurants-details/rest-details1-mb-2x.jpg 2x,
+                  "
                   src="./images/index/img_1.jpg"
                   alt="Glass with ice"
                   width="157"
@@ -450,8 +462,11 @@
       </li>
       <li>
         <img
-                  srcset="/project-1/assets/rest-details2-mb-1x-8e6155ce.jpg 1x, /project-1/assets/rest-details2-mb-2x-e7674ce2.jpg 2x"
-                  src="/project-1/assets/rest-details2-mb-1x-8e6155ce.jpg"
+                  srcset="
+                  ./img/mp-restaurants-details/rest-details2-mb-1x.jpg 1x,
+                  ./img/mp-restaurants-details/rest-details2-mb-2x.jpg 2x,
+                  "
+                  src="./img/mp-restaurants-details/rest-details2-mb-1x.jpg"
                   alt="Cook"
                   width="157"
                   height="201"
@@ -459,34 +474,48 @@
                 />
       </li>
     </ul>
-    <ul class="img-list list tbl-img-hidden">
-      <li>
-        <img
-                  srcset="/project-1/assets/rest-details-1-tbl-1x-537ecc2b.jpg 1x, /project-1/assets/rest-details-1-tbl-2x-2c58f7c7.jpg 2x"
-                  src="/project-1/assets/rest-details-1-tbl-1x-537ecc2b.jpg"
-                  alt="Glass with ice"
-                  width="336"
-                  height="309"
-                  class="image"
-                />
-      </li>
-      <li>
-        <img
-                  srcset="/project-1/assets/rest-details-2-tbl-1x-9c297e45.jpg 1x, /project-1/assets/rest-details-2-tbl-2x-ad15e76b.jpg 2x"
-                  src="/project-1/assets/rest-details-2-tbl-1x-9c297e45.jpg"
-                  alt="Cook"
-                  width="336"
-                  height="309"
-                  class="image"
-                />
-      </li>
-    </ul>
-    <ul class="img-list list dsk-img-hidden">
-      <li class="img-item">
+    <ul class="img-list list gallery">
+      
+        <li class="gallery__item">
+         <a class="gallery__link" href="./img/mp-restaurants-details/rest-details-1-tbl-2x.jpg"></a><img
+                    srcset="
+                    ./img/mp-restaurants-details/rest-details-1-tbl-1x.jpg 1x,
+                    ./img/mp-restaurants-details/rest-details-1-tbl-2x.jpg 2x,
+                    "
+                    src="./img/mp-restaurants-details/rest-details-1-tbl-1x.jpg"
+                    alt="Glass with ice"
+                    width="336"
+                    height="309"
+                    class="image gallery__image"
+                  /></a>
+        </li>
+      
+      
+        <li class="gallery__item">
+          <a class="gallery__link" href="./img/mp-restaurants-details/rest-details-2-tbl-2x.jpg"></a><img
+                    srcset="
+                    ./img/mp-restaurants-details/rest-details-2-tbl-1x.jpg 1x,
+                    ./img/mp-restaurants-details/rest-details-2-tbl-2x.jpg 2x,
+                    "
+                    src="./img/mp-restaurants-details/rest-details-2-tbl-1x.jpg"
+                    alt="Cook"
+                    width="336"
+                    height="309"
+                    class="image gallery__image"
+                  /></a>
+        </li>
+        
+      
+    </ul> -->
+    <ul class="img-list list gallery">
+      <!-- <li class="img-item">
         <img
         class="img-height"
-                  srcset="/project-1/assets/rest-details_1-desk-1x-ae6cd546.jpg 1x, /project-1/assets/rest-details_1-desk-2x-bfaddbb1.jpg 2x"
-                  src="/project-1/assets/rest-details_1-desk-1x-ae6cd546.jpg"
+                  srcset="
+                  ./img/mp-restaurants-details/rest-details_1-desk-1x.jpg 1x,
+                  ./img/mp-restaurants-details/rest-details_1-desk-2x.jpg 2x,
+                  "
+                  src="./img/mp-restaurants-details/rest-details_1-desk-1x.jpg"
                   alt="Glass with ice"
                   width="266"
                   height="309"
@@ -496,8 +525,11 @@
       <li class="img-item">
         <img
         class="img-height"
-        srcset="/project-1/assets/rest-details_2-desk-1x-e4300d7b.jpg 1x, /project-1/assets/rest-details_2-desk-2x-f54cd381.jpg 2x"
-        src="/project-1/assets/rest-details_2-desk-1x-e4300d7b.jpg"
+        srcset="
+        ./img/mp-restaurants-details/rest-details_2-desk-1x.jpg 1x,
+        ./img/mp-restaurants-details/rest-details_2-desk-2x.jpg 2x,
+        "
+        src="./img/mp-restaurants-details/rest-details_2-desk-1x.jpg"
         alt="Sandwich"
         width="266"
         height="309"
@@ -507,8 +539,11 @@
       <li class="img-item">
         <img
         class="img-height"
-        srcset="/project-1/assets/rest-details_3-desk-1x-97f3369b.jpg 1x, /project-1/assets/rest-details_3-desk-2x-ab4d09b8.jpg 2x"
-        src="/project-1/assets/rest-details_3-desk-1x-97f3369b.jpg"
+        srcset="
+        ./img/mp-restaurants-details/rest-details_3-desk-1x.jpg 1x,
+        ./img/mp-restaurants-details/rest-details_3-desk-2x.jpg 2x,
+        "
+        src="./img/mp-restaurants-details/rest-details_3-desk-1x.jpg"
         alt="Bottle of wine"
         width="266"
         height="309"
@@ -518,8 +553,11 @@
       <li class="img-item">
         <img
         class="img-height"
-        srcset="/project-1/assets/rest-details_4-desk-1x-2ad85181.jpg 1x, /project-1/assets/rest-details_4-desk-2x-f53eb9c5.jpg 2x"
-        src="/project-1/assets/rest-details_4-desk-1x-2ad85181.jpg"
+        srcset="
+        ./img/mp-restaurants-details/rest-details_4-desk-1x.jpg 1x,
+        ./img/mp-restaurants-details/rest-details_4-desk-2x.jpg 2x,
+        "
+        src="./img/mp-restaurants-details/rest-details_4-desk-1x.jpg"
         alt="Cook"
         width="266"
         height="309"
@@ -529,30 +567,33 @@
       <li class="img-item">
         <img
         class="img-height"
-        srcset="/project-1/assets/rest-details_5-desk-1x-137742ed.jpg 1x, /project-1/assets/rest-details_5-desk-2x-50e59f9f.jpg 2x"
-        src="/project-1/assets/rest-details_5-desk-1x-137742ed.jpg"
+        srcset="
+        ./img/mp-restaurants-details/rest-details_5-desk-1x.jpg 1x,
+        ./img/mp-restaurants-details/rest-details_5-desk-2x.jpg 2x,
+        "
+        src="./img/mp-restaurants-details/rest-details_5-desk-1x.jpg"
         alt="Fried fish"
         width="266"
         height="309"
         class="image"
       />
-      </li>
+      </li> -->
     </ul>
-    <ul class="rest-arrs-list">
+    <!-- <ul class="rest-arrs-list">
       <li class="rest-arrs-item">
         <svg class="arr-right" width="24px" height="24px">
-          <use href="/project-1/assets/icons-f89c3f39.svg#icon-arr-left"></use>
+          <use href="./img/svg-images/icons.svg#icon-arr-left"></use>
         </svg>
       </li>
       <li class="rest-arrs-item">
         <svg class="arr-left" width="24px" height="24px">
-          <use href="/project-1/assets/icons-f89c3f39.svg#icon-arr-right"></use>
+          <use href="./img/svg-images/icons.svg#icon-arr-right"></use>
         </svg>
       </li>
-    </ul>
+    </ul> -->
     <ul class="hd-btns mob-btn-box">
     <div class="restaurant-btn dsk-hidden">
-      <button class="btn btn-dark" type="button">Book a table</button>
+      <button class="btn btn-dark" type="button" data-modal-btn="table">Book a table</button>
       <button class="btn btn-dark" type="button">View the menu</button>
     </div>
   </div>
@@ -644,7 +685,7 @@
           <button
             class="btn btn-light hd-btn"
             type="button"
-            data-modal-room-open-1
+            data-modal-btn="room"
           >
             BOOK A ROOM
           </button>
@@ -852,7 +893,7 @@
           <button
             class="btn btn-light hd-btn"
             type="button"
-            data-modal-room-open
+            data-modal-btn="room"
           >
             BOOK A ROOM
           </button>
@@ -989,9 +1030,9 @@
     </footer>
     <!-- Modals -->
     <!--Modal PRICES PER ROOM-->
-<div class="backdrop" modal-price>
+<div class="backdrop" data-modal-window="price">
   <div class="modal">
-    <button class="modal-close-btn" type="button" modal-price-close>
+    <button class="modal-close-btn" type="button" data-modal-btn="close_price">
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -1037,9 +1078,9 @@
 </script>
 
     <!--Modal BOOK A TABLE-->
-<div class="backdrop" modal-table>
+<div class="backdrop" data-modal-window="table">
   <div class="modal modal-room">
-    <button class="modal-close-btn" type="button" modal-table-close>
+    <button class="modal-close-btn" type="button" data-modal-btn="close_table">
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -1103,9 +1144,9 @@
 
 
     <!--Modal BOOK A ROOM-->
-<div class="backdrop is-hidden" data-modal-room id="modal-book-room">
+<div class="backdrop" data-modal-window="room">
   <div class="modal modal-room">
-    <button class="modal-close-btn" type="button" data-modal-room-close >
+    <button class="modal-close-btn" type="button" data-modal-btn="close_room" >
       <svg class="customers-icon" width="24" height="24">
         <use href="/project-1/assets/icons-3761a377.svg#icon-header-menu-close"></use>
       </svg>
@@ -1166,11 +1207,6 @@
     <!-- Scripts -->
 
     
-
-    
-
-    
-
     
   </body>
 </html>
