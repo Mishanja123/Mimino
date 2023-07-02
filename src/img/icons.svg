@@ -20,5 +20,8 @@
 <symbol id="icon-arr-down" viewBox="0 0 48 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="7.2" d="m4 6 20 20L44 6"/>
 </symbol>
+ <symbol id="icon-button" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 30l14-14-14-14"/>
+    </symbol>
 </defs>
 </svg>
