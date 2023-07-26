@@ -1,277 +1,138 @@
+.hotel-hero-section {
 
-.hotel-hero {
-
-    padding-top: 120px;
-    padding-bottom: 64px;
+  padding-top: 120px;
+  padding-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
-    .hotel-hero {
-        padding-bottom: 40px;
-        padding-bottom: 120px;
-    }
+  .hotel-hero-section {
+    padding-bottom: 40px;
+    padding-bottom: 120px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .hotel-hero {
-        padding-top: 100px;
-        padding-bottom: 130px;
-        
-    }
+  .hotel-hero-section {
+    padding-top: 100px;
+    padding-bottom: 130px;
+
+  }
 }
 
-
-.hotel-hero-box2 {}
-
-@media screen and (min-width: 768px) {
-    .hotel-hero-box2 {}
-}
-
-@media screen and (min-width: 1440px) {
-    .hotel-hero-box2 {
-       margin-top: 180px;
-       
-    }
-}
-
-.hotel-hero-box1 {}
-
-@media screen and (min-width: 768px) {
-    .hotel-hero-box1 {}
-}
-
-@media screen and (min-width: 1440px) {
-    .hotel-hero-box1 {
-        display: flex;
-        gap: 360px;
-    }
-}
-
-.tablet-box {}
-
-@media screen and (min-width: 768px) {
-    .tablet-box {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .tablet-box {
-        justify-content: flex-end;
-    }
-}
 
 .heading-hotel {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: var(--primary-dark-color);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-dark-color);
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
-    .heading-hotel {
-        font-size: 80px;
-        margin-bottom: 32px;
-    }
+  .heading-hotel {
+    font-size: 80px;
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .heading-hotel {
-        font-size: 90px;
-    }
+  .heading-hotel {
+    font-size: 90px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+  .hotel-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 367px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotel-hero-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 108px;
+
+
+  }
 }
 
 .paragraph-ht {
-    font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 40px;
+  width: 338px;
 
 }
 
 @media screen and (min-width: 768px) {
-    .paragraph-ht {
-        width: 338px;
-    }
+  .paragraph-ht {}
 }
 
 @media screen and (min-width: 1440px) {
-    .paragraph-ht {
-    }
+  .paragraph-ht {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 1439px) {
-.table-p-hidden {
- display: none;
-}
-}
-@media screen and (min-width: 1440px) {
-.desk-p-hidden {
+  .table-p-hidden {
     display: none;
-}
+  }
 }
 
-.btn-hotel-div:last-child {
-    margin-bottom: 0;
+@media screen and (min-width: 1440px) {
+  .desk-p-hidden {
+    display: none;
+  }
 }
 
 .btn-hotel-div {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 40px;
+  display: flex;
+  gap: 13px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .btn-hotel-div {
-        margin-bottom: 54px;
-    }
+  .btn-hotel-div {
+    margin-bottom: 54px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .btn-hotel-div {
-        margin-bottom: 204px;
-        
-    }
-    
-}
+  .btn-hotel-div {
+    margin-bottom: 204px;
 
+  }
 
-
-
-
-
-
-
-.hotel-img-wrapper {
-   
-    overflow: hidden;
-    height: 580px;
-}
-@media screen and (min-width: 768px) {
-    .hotel-img-box {
-        gap: 32px;
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .hotel-img-box {
-        
-    }
-}
-
-.img-hidden {
-    display: none;
-}
-
-
-
-.hotel-img-box {
-    display: flex;
-}
-@media screen and (min-width: 768px) {
-    .hotel-img-box {
-    
-    }
-}
-@media screen and (min-width: 1440px) {
-    .hotel-img-box {
-        
-    }
-}
-
-.img-hh {
-    min-width: 250px;
-    
 }
 
 @media screen and (min-width: 768px) {
-    .img-hh {
-        min-width: 436px;
-
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .img-hh {
-    }
-}
-
-.slider-btn-box {
-
-    display: flex;
-    gap: 60px;
-    justify-content: flex-end;
-    margin-bottom: 40px;
-}
-
-@media screen and (min-width: 768px) {
-    .slider-btn-box {}
-}
-
-@media screen and (min-width: 1440px) {
-    .slider-btn-box {
-        margin-bottom: 0;
-        justify-content: start;
-       
-    }
-}
-
-.slider-btn {
-/* 
-    display: none;
-    border: none; */
-}
-
-@media screen and (min-width: 768px) {
-    .slider-btn {}
-}
-
-@media screen and (min-width: 1440px) {
-    .slider-btn {}
-}
-
-
-.slider-btn-svg {
-   
-    
-}
-
-@media screen and (min-width: 768px) {
-    .slider-btn-svg {}
-}
-
-@media screen and (min-width: 1440px) {
-    .slider-btn-svg {}
-}
-
-.slider-container {
+  .img-hh {
     width: 436px;
-    height: 429px;
-    position: relative;
-    overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-    .slider-container {
-        height: 548px;
-    }
+    height: 548px;
+
+  }
 }
 
-@media screen and (min-width: 1440px) {
-    .slider-container {
-        height: 580px;
-    }
-}
-.slider-track {
-    height: 580px;
+
+
+@media screen and (min-width: 768px) {
+.test-hotel {
     display: flex;
-    transition-duration: .5s;
+    gap: 250px;
+  }
 }
