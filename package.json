@@ -1,11 +1,11 @@
 {
-  "name": "project-1",
+  "name": "Mimino",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-1/",
+    "build": "vite build --base=/Mimino/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "simplelightbox": "^2.13.0",
+    "slick-carousel": "^1.8.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
